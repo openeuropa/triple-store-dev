@@ -1,1 +1,1 @@
-# triple-store-dev
+# Content layer development triple store
