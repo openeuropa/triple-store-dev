@@ -26,7 +26,7 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
   }
 
   /**
-   * Fetch data.
+   * Import data.
    *
    * @command import
    */
@@ -36,6 +36,7 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
     foreach ($this->getConfig()->get('data') as $datum) {
       $task = $this->taskExec('curl')
         ->option('digest')
+        ->option('verbose')
         ->option('user', 'dba:dba')
         ->option('url', "{$baseUrl}/sparql-graph-crud-auth?graph-uri={$datum['graph']}")
         ->option('-T', "/tmp/{$datum['name']}.rdf");

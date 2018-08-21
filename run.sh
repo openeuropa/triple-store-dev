@@ -1,5 +1,6 @@
 #!/bin/bash
 sed -i 's/exec virtuoso-t +wait +foreground//g' /virtuoso.sh
+/bin/bash /virtuoso.sh
 
 cd /
 virtuoso-t +wait
