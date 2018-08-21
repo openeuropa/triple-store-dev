@@ -6,10 +6,10 @@ sed -i 's/exec virtuoso-t +wait +foreground//g' /virtuoso.sh
 # Setup Virtuoso.
 /bin/bash /virtuoso.sh
 
-# Import RDF data.
-cd /
+# Import RDF triples.
 virtuoso-t +wait
-/vendor/bin/robo import
+./vendor/bin/robo purge
+./vendor/bin/robo import
 
 # Restart Virtuoso in foreground.
 kill $(ps aux | grep '[v]irtuoso-t' | awk '{print $2}')

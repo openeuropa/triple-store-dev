@@ -23,6 +23,22 @@ docker run --name=triple-store-dev -p 8890:8890 openeuropa/triple-store-dev
 
 Visit the RDF storage at: http://localhost:8890
 
+## Available commands
+
+Purge all data:
+
+```
+$ docker exec triple-store-dev ./vendor/bin/robo purge
+```
+
+Import default data:
+
+```
+$ docker exec triple-store-dev ./vendor/bin/robo import
+```
+
+## Working with Docker Compose
+
 In Docker Compose declare service as follow:
 
 ```

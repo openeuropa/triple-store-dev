@@ -45,4 +45,13 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
     return $collection->run();
   }
 
+  /**
+   * Purge data.
+   *
+   * @command purge
+   */
+  public function purge() {
+    $this->_exec("echo 'DELETE FROM DB.DBA.RDF_QUAD;' | isql-v -U dba -P dba >/dev/null");
+  }
+
 }
