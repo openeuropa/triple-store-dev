@@ -2,7 +2,7 @@ pipeline:
   publish-docker-image:
     group: docker-image
     image: plugins/docker
-    repo: openeuropa/triple-store
+    repo: openeuropa/triple-store-dev
     dockerfile: Dockerfile
     secrets: [ docker_username, docker_password ]
     when:
