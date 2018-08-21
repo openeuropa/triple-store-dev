@@ -1,0 +1,17 @@
+{
+    "name": "openeuropa/triple-store-dev",
+    "description": "Content layer triple store for development.",
+    "type": "project",
+    "license": "EUPL-1.2",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "consolidation/robo": "^1.0"
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "7.0"
+        }
+    }
+}
