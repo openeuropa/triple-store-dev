@@ -1,0 +1,8 @@
+backend:
+  base_url: http://localhost:8890
+
+data:
+  - name: "resource-type"
+    graph: "http://localhost"
+    url: "http://publications.europa.eu/resource/cellar/07fa8597-2b56-11e7-9412-01aa75ed71a1.0001.10/DOC_1"
+
