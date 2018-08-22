@@ -5,14 +5,13 @@ sed -i 's/exec virtuoso-t +wait +foreground//g' /virtuoso.sh
 
 # Setup Virtuoso.
 /bin/bash /virtuoso.sh
-
 [ -z "$DBA_PASSWORD" ] && export DBA_PASSWORD=dba
 
 # Import RDF triples.
-virtuoso-t +wait
+virtuoso-t +configfile /virtuoso.ini +wait
 ./vendor/bin/robo purge
 ./vendor/bin/robo import
 
 # Restart Virtuoso in foreground.
 kill $(ps aux | grep '[v]irtuoso-t' | awk '{print $2}')
-exec virtuoso-t +wait +foreground
+exec virtuoso-t +configfile /virtuoso.ini +wait +foreground
