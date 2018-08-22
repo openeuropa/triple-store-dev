@@ -39,13 +39,13 @@ Visit the RDF storage at: http://localhost:8890
 Purge all data:
 
 ```
-$ docker exec triple-store-dev ./vendor/bin/robo purge
+$ docker exec --env DBA_PASSWORD=dba triple-store-dev ./vendor/bin/robo purge
 ```
 
 Import default data:
 
 ```
-$ docker exec triple-store-dev ./vendor/bin/robo import
+$ docker exec --env DBA_PASSWORD=dba triple-store-dev ./vendor/bin/robo import
 ```
 
 ## Working with Docker Compose
@@ -60,6 +60,8 @@ services:
     image: openeuropa/triple-store-dev
     ports:
       - 8890:8890
+    environment:
+      DBA_PASSWORD: dba
 ```
 
 For more information about Docker Compose configuration check the parent Docker image
