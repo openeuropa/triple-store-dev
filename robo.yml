@@ -1,5 +1,7 @@
 backend:
-  base_url: http://localhost:8890
+  base_url: "http://localhost:8890"
+  username: "dba"
+  password: "${env.DBA_PASSWORD}"
 
 data:
   - name: "corporate-body"

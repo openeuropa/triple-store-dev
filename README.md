@@ -1,6 +1,8 @@
 # Content layer development triple store
 
-Triple storage containing default data to kick-start content layer local development.
+Triple storage containing default data to kick-start content layer local development
+based on [OpenLink Virtuoso](https://virtuoso.openlinksw.com).
+
 
 The following RDF triples will be imported once the service starts:
 
@@ -59,3 +61,6 @@ services:
     ports:
       - 8890:8890
 ```
+
+For more information about Docker Compose configuration check the parent Docker image
+[Tenforce Virtuoso](https://hub.docker.com/r/tenforce/virtuoso/).

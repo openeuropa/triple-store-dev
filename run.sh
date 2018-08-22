@@ -6,6 +6,8 @@ sed -i 's/exec virtuoso-t +wait +foreground//g' /virtuoso.sh
 # Setup Virtuoso.
 /bin/bash /virtuoso.sh
 
+[ -z "$DBA_PASSWORD" ] && export DBA_PASSWORD=dba
+
 # Import RDF triples.
 virtuoso-t +wait
 ./vendor/bin/robo purge

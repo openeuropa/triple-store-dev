@@ -31,14 +31,14 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
    * @command import
    */
   public function import() {
-    $baseUrl = $this->getConfig()->get('backend.base_url');
+    $backend = $this->getConfig()->get('backend');
     $collection = $this->collectionBuilder();
     foreach ($this->getConfig()->get('data') as $datum) {
       $task = $this->taskExec('curl')
         ->option('digest')
         ->option('verbose')
-        ->option('user', 'dba:dba')
-        ->option('url', "{$baseUrl}/sparql-graph-crud-auth?graph-uri={$datum['graph']}")
+        ->option('user', $backend['username'].':'.$backend['password'])
+        ->option('url', "{$backend['base_url']}/sparql-graph-crud-auth?graph-uri={$datum['graph']}")
         ->option('-T', "/tmp/{$datum['name']}.rdf");
       $collection->addTask($task);
     }
@@ -51,7 +51,8 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
    * @command purge
    */
   public function purge() {
-    $this->_exec("echo 'DELETE FROM DB.DBA.RDF_QUAD;' | isql-v -U dba -P dba >/dev/null");
+    $backend = $this->getConfig()->get('backend');
+    $this->_exec("echo 'DELETE FROM DB.DBA.RDF_QUAD;' | isql-v -U {$backend['username']} -P {$backend['password']} >/dev/null");
   }
 
 }
