@@ -12,7 +12,7 @@ data:
     graph: "http://publications.europa.eu/resource/authority/target-audience"
     url: "http://publications.europa.eu/resource/cellar/4cb35e04-75c5-11e7-b2f2-01aa75ed71a1.0001.08/DOC_1"
 
-  - name: "organization-audience"
+  - name: "organization-type"
     graph: "http://publications.europa.eu/resource/authority/organization-type"
     url: "http://publications.europa.eu/resource/cellar/a8bcd901-17b8-11e8-ac73-01aa75ed71a1.0001.06/DOC_1"
 
