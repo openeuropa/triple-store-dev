@@ -15,14 +15,34 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
    * @command fetch
    */
   public function fetch() {
-    $collection = $this->collectionBuilder();
+
+    $tasks = [];
     foreach ($this->getConfig()->get('data') as $datum) {
-      $task = $this->taskExec('wget')
-        ->option('-O', "/tmp/{$datum['name']}.rdf")
-        ->arg($datum['url']);
-      $collection->addTask($task);
+
+      // RDF destination file.
+      $source = "/tmp/{$datum['name']}.{$datum['format']}";
+
+      // Fetch raw RDF file source.
+      $tasks[] = $this->taskExec('wget')
+          ->option('-O', $source)
+          ->arg($datum['url']);
+
+      if ($datum['format'] === 'zip') {
+        $destination = "/tmp/{$datum['name']}.rdf";
+
+        // Extract archive.
+        $tasks[] = $this->taskExtract($source)->to($datum['name']);
+
+        // Move RDF file to final destination.
+        $tasks[] = $this->taskFilesystemStack()
+          ->copy($datum['name'].'/'.$datum['file'], $destination);
+
+        // Remove working directory.
+        $tasks[] = $this->taskFilesystemStack()->remove($datum['name']);
+      }
     }
-    return $collection->run();
+
+    return $this->collectionBuilder()->addTaskList($tasks);
   }
 
   /**

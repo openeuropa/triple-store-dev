@@ -13,5 +13,6 @@ virtuoso-t +configfile /virtuoso.ini +wait
 ./vendor/bin/robo import
 
 # Restart Virtuoso in foreground.
-kill $(ps aux | grep '[v]irtuoso-t' | awk '{print $2}')
+isql-v -U dba -P $DBA_PASSWORD -K
+while [ -f /data/virtuoso.lck ] ; do sleep 1 ; done
 exec virtuoso-t +configfile /virtuoso.ini +wait +foreground
