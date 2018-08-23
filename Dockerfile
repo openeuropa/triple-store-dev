@@ -12,7 +12,7 @@ RUN composer --no-interaction install
 FROM tenforce/virtuoso:1.3.1-virtuoso7.2.2
 WORKDIR /app
 
-RUN apt-get update && apt-get install -qq -y wget curl php7.0
+RUN apt-get update && apt-get install -qq -y wget curl php7.0 php7.0-zip
 
 COPY --from=build /app /app
 

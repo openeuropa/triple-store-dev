@@ -10,6 +10,7 @@ The following RDF triples will be imported once the service starts:
 - [Target audience](http://publications.europa.eu/resource/cellar/4cb35e04-75c5-11e7-b2f2-01aa75ed71a1.0001.08/DOC_1)  
 - [Organization type](http://publications.europa.eu/resource/cellar/a8bcd901-17b8-11e8-ac73-01aa75ed71a1.0001.06/DOC_1)  
 - [Resource type](http://publications.europa.eu/resource/cellar/07fa8597-2b56-11e7-9412-01aa75ed71a1.0001.10/DOC_1)  
+- [EuroVoc Thesaurus](http://publications.europa.eu/resource/cellar/9f2bd600-ae7b-11e7-837e-01aa75ed71a1.0001.09/DOC_1)  
 
 New default content can be added to [`robo.yml`](./robo.yml) as shown below:
 
