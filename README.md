@@ -4,7 +4,7 @@ Triple storage containing default data to kick-start content layer local develop
 based on [OpenLink Virtuoso](https://virtuoso.openlinksw.com).
 
 
-The following RDF triples are available within the Docker image:
+The following RDF triples will be imported once the service starts:
 
 - [Corporate body](http://publications.europa.eu/resource/cellar/07e1a665-2b56-11e7-9412-01aa75ed71a1.0001.10/DOC_1)
 - [Target audience](http://publications.europa.eu/resource/cellar/4cb35e04-75c5-11e7-b2f2-01aa75ed71a1.0001.08/DOC_1)  

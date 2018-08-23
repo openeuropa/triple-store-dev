@@ -6,5 +6,5 @@ pipeline:
     dockerfile: Dockerfile
     secrets: [ docker_username, docker_password ]
     when:
-#      branch: master
+      branch: master
       event: push
