@@ -17,27 +17,19 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
   public function fetch() {
 
     $tasks = [];
-    foreach ($this->getConfig()->get('data') as $datum) {
-
-      // RDF destination file.
-      $source = "/tmp/{$datum['name']}.{$datum['format']}";
+    $tasks[] = $this->taskFilesystemStack()->mkdir($this->config->get('import_dir'));
+    foreach ($this->config->get('data') as $datum) {
 
       // Fetch raw RDF file source.
-      $tasks[] = $this->taskExec('wget')
-          ->option('-O', $source)
-          ->arg($datum['url']);
+      $tasks[] = $this->taskExec('wget')->option('-O', $this->getFilePath($datum))->arg($datum['url']);
 
+      // Create graph IRI file for import.
+      $tasks[] = $this->taskWriteToFile($this->getFilePath($datum, 'rdf.graph'))->text($datum['graph']);
+
+      // If a ZIP archive extract it and move content to its final destination.
       if ($datum['format'] === 'zip') {
-        $destination = "/tmp/{$datum['name']}.rdf";
-
-        // Extract archive.
-        $tasks[] = $this->taskExtract($source)->to($datum['name']);
-
-        // Move RDF file to final destination.
-        $tasks[] = $this->taskFilesystemStack()
-          ->copy($datum['name'].'/'.$datum['file'], $destination);
-
-        // Remove working directory.
+        $tasks[] = $this->taskExtract($this->getFilePath($datum))->to($datum['name']);
+        $tasks[] = $this->taskFilesystemStack()->copy($datum['name'].'/'.$datum['file'], $this->getFilePath($datum, 'rdf'));
         $tasks[] = $this->taskFilesystemStack()->remove($datum['name']);
       }
     }
@@ -51,18 +43,12 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
    * @command import
    */
   public function import() {
-    $backend = $this->getConfig()->get('backend');
-    $collection = $this->collectionBuilder();
-    foreach ($this->getConfig()->get('data') as $datum) {
-      $task = $this->taskExec('curl')
-        ->option('digest')
-        ->option('verbose')
-        ->option('user', $backend['username'].':'.$backend['password'])
-        ->option('url', "{$backend['base_url']}/sparql-graph-crud-auth?graph-uri={$datum['graph']}")
-        ->option('-T', "/tmp/{$datum['name']}.rdf");
-      $collection->addTask($task);
-    }
-    return $collection->run();
+    return $this->taskRunQueries([
+      "ld_dir('./import', '*.rdf', NULL);",
+      "rdf_loader_run();",
+      "exec('checkpoint');",
+      "WAIT_FOR_CHILDREN;",
+    ]);
   }
 
   /**
@@ -71,8 +57,47 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
    * @command purge
    */
   public function purge() {
+    return $this->taskRunQueries([
+      'DELETE FROM DB.DBA.load_list;',
+      'DELETE FROM DB.DBA.RDF_QUAD;',
+    ]);
+  }
+
+  /**
+   * Run list of queries via isql-v.
+   *
+   * @param array $queries
+   *    Queries to be executed.
+   *
+   * @return \Robo\Collection\CollectionBuilder
+   *    Task collection.
+   */
+  private function taskRunQueries(array $queries) {
     $backend = $this->getConfig()->get('backend');
-    $this->_exec("echo 'DELETE FROM DB.DBA.RDF_QUAD;' | isql-v -U {$backend['username']} -P {$backend['password']} >/dev/null");
+
+    $tasks = [];
+    $tasks[] = $this->taskWriteToFile('query.sql')->append(TRUE)->lines($queries);
+    $tasks[] = $this->taskExec("cat query.sql");
+    $tasks[] = $this->taskExec("isql-v -U {$backend['username']} -P {$backend['password']} < query.sql");
+    $tasks[] = $this->taskFilesystemStack()->remove('query.sql');
+
+    return $this->collectionBuilder()->addTaskList($tasks);
+  }
+
+  /**
+   * Get full file path.
+   *
+   * @param array $datum
+   *    File properties as in robo.yml.
+   * @param string $format
+   *    File format extension, i.e. "rdf", "zip", etc.
+   *
+   * @return string
+   *    Full file path.
+   */
+  private function getFilePath(array $datum, $format = '') {
+    $format = empty($format) ? $datum['format'] : $format;
+    return $this->config->get('import_dir')."/{$datum['name']}.{$format}";
   }
 
 }
