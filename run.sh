@@ -12,6 +12,6 @@ mv $IMPORT_DIR .
 ./vendor/bin/robo purge
 ./vendor/bin/robo import
 
-## Restart Virtuoso in foreground.
+# Restart Virtuoso in foreground.
 kill $(pidof virtuoso-t)
 exec virtuoso-t +configfile /virtuoso.ini +wait +foreground
