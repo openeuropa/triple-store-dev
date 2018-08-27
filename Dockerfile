@@ -10,12 +10,14 @@ COPY run.sh run.sh
 RUN composer --no-interaction install
 
 FROM tenforce/virtuoso:1.3.1-virtuoso7.2.2
-WORKDIR /app
+
+ENV IMPORT_DIR /tmp/import
+ENV DBA_PASSWORD dba
 
 RUN apt-get update && apt-get install -qq -y wget curl php7.0 php7.0-zip
 
-COPY --from=build /app /app
+COPY --from=build /app .
 
 RUN ./vendor/bin/robo fetch
 
-CMD ["/bin/bash", "/app/run.sh"]
+CMD ["/bin/bash", "run.sh"]

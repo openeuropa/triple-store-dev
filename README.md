@@ -19,7 +19,22 @@ data:
   - name: "corporate-body"
     graph: "http://publications.europa.eu/resource/authority/corporate-body"
     url: "http://publications.europa.eu/resource/cellar/07e1a665-2b56-11e7-9412-01aa75ed71a1.0001.10/DOC_1"
+    format: "rdf"
 ```
+
+Value of `format:` property can be either `rdf` or `zip`. If `zip` then an additional `file:` property is expected
+containing the archived RDF file name as shown below:
+
+```
+data:
+  - name: "eurovoc-thesaurus"
+    graph: "http://publications.europa.eu/resource/dataset/eurovoc"
+    url: "http://publications.europa.eu/resource/cellar/9f2bd600-ae7b-11e7-837e-01aa75ed71a1.0001.09/DOC_1"
+    file: "eurovoc_in_skos_core_concepts.rdf"
+    format: "zip"
+``` 
+
+## Build and run
 
 Build:
 
