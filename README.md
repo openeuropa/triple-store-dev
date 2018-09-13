@@ -82,3 +82,21 @@ services:
 
 For more information about Docker Compose configuration check the parent Docker image
 [Tenforce Virtuoso](https://hub.docker.com/r/tenforce/virtuoso/).
+
+In order to test a specific branch of the `triple-store-dev` image follow the steps below:
+
+In the `docker-compose.yml` of the testing project (i.e. the `oe_content` module) use:
+
+```
+  sparql:
+    build: /path/to/your/local/triple-store-dev/checkout
+#    image: openeuropa/triple-store-dev
+    environment:
+```
+
+Given that all your services are down, to rebuild run the following:
+
+```
+docker-compose build --force-rm --no-cache sparql 
+docker-compose up -d
+```
