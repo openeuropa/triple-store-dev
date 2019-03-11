@@ -8,7 +8,12 @@ backend:
 data:
   - name: "corporate-body"
     graph: "http://publications.europa.eu/resource/authority/corporate-body"
-    url: "http://publications.europa.eu/resource/cellar/07e1a665-2b56-11e7-9412-01aa75ed71a1.0001.10/DOC_1"
+    url: "http://publications.europa.eu/resource/distribution/corporate-body/20190220-0/rdf/skos_ap_act/corporatebodies-skos-ap-act.rdf"
+    format: "rdf"
+
+  - name: "corporate-body-classification"
+    graph: "http://publications.europa.eu/resource/authority/corporate-body-classification"
+    url: "http://publications.europa.eu/resource/distribution/corporate-body-classification/20180926-0/rdf/skos_core/corporate-body-classification-skos.rdf"
     format: "rdf"
 
   - name: "target-audience"
@@ -41,4 +46,3 @@ data:
     graph: "http://publications.europa.eu/resource/dataset/public-event-type"
     url: "http://publications.europa.eu/resource/distribution/public-event-type/20180926-0/rdf/skos_core/public-event-type-skos.rdf"
     format: "rdf"
-
