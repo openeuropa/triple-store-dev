@@ -19,14 +19,8 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
     $tasks = [];
     $tasks[] = $this->taskFilesystemStack()->mkdir($this->config->get('import_dir'));
     foreach ($this->config->get('data') as $datum) {
-
-      if (!empty($datum['url'])) {
-        // Fetch raw RDF file source.
-        $tasks[] = $this->taskExec('wget')->option(
-          '-O',
-          $this->getFilePath($datum)
-        )->arg($datum['url']);
-      }
+      // Fetch raw RDF file source.
+      $tasks[] = $this->taskExec('wget')->option('-O', $this->getFilePath($datum))->arg($datum['url']);
       // Create graph IRI file for import.
       $tasks[] = $this->taskWriteToFile($this->getFilePath($datum, 'rdf.graph'))->text($datum['graph']);
 

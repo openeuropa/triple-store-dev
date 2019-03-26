@@ -39,6 +39,7 @@ data:
 
   - name: "digital-europa-thesaurus"
     graph: "http://data.europa.eu/uxp"
+    url: "https://raw.githubusercontent.com/openeuropa/triple-store-dev/0a03163f2b718d5836f39be1696a22de1eb0e84b/local_config/digital-europa-thesaurus.rdf"
     format: "rdf"
 
   - name: "place"
