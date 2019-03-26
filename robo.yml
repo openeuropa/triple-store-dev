@@ -37,6 +37,11 @@ data:
     file: "eurovoc_in_skos_core_concepts.rdf"
     format: "zip"
 
+  - name: "europa-digital-thesaurus"
+    graph: "http://data.europa.eu/uxp"
+    url: "https://raw.githubusercontent.com/openeuropa/triple-store-dev/master/local_config/digital-europa-thesaurus.rdf"
+    format: "rdf"
+
   - name: "place"
     graph: "http://publications.europa.eu/resource/dataset/place"
     url: "http://publications.europa.eu/resource/distribution/place/20181212-0/rdf/skos_core/places-skos.rdf"
