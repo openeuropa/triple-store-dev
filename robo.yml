@@ -37,9 +37,9 @@ data:
     file: "eurovoc_in_skos_core_concepts.rdf"
     format: "zip"
 
-  - name: "digital-europa-thesaurus"
+  - name: "europa-digital-thesaurus"
     graph: "http://data.europa.eu/uxp"
-    url: "https://raw.githubusercontent.com/openeuropa/triple-store-dev/0a03163f2b718d5836f39be1696a22de1eb0e84b/local_config/digital-europa-thesaurus.rdf"
+    url: "https://raw.githubusercontent.com/openeuropa/triple-store-dev/master/local_config/digital-europa-thesaurus.rdf"
     format: "rdf"
 
   - name: "place"
