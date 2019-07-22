@@ -58,13 +58,13 @@ Visit the RDF storage at: http://localhost:8890
 Purge all data:
 
 ```
-$ docker exec --env DBA_PASSWORD=dba triple-store-dev ./vendor/bin/robo purge
+$ docker exec triple-store-dev ./vendor/bin/robo purge
 ```
 
 Import default data:
 
 ```
-$ docker exec --env DBA_PASSWORD=dba triple-store-dev ./vendor/bin/robo import
+$ docker exec triple-store-dev ./vendor/bin/robo import
 ```
 
 ## Working with Docker Compose

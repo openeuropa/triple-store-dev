@@ -1,6 +1,9 @@
 <?php
 
 use Robo\Contract\ConfigAwareInterface;
+use Consolidation\AnnotatedCommand\AnnotationData;
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputOption;
 
 /**
  * Triple store setup commands.
@@ -10,14 +13,32 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
   use \Robo\Common\ConfigAwareTrait;
 
   /**
+   * Set default command options.
+   *
+   * @hook option *
+   */
+  public function setDefaultOptions(Command $command, AnnotationData $annotationData) {
+    // Get default values from env variables, if any.
+    $import_dir = getenv('IMPORT_DIR') ?: './import';
+    $host = getenv('DBA_HOST') ?: 'http://localhost:8890';
+    $username = getenv('DBA_USERNAME') ?: 'dba';
+    $password = getenv('DBA_PASSWORD') ?: 'dba';
+
+    // Set default command options.
+    $command->addOption('import-dir', '', InputOption::VALUE_OPTIONAL, 'Data import directory.', $import_dir);
+    $command->addOption('host', '', InputOption::VALUE_OPTIONAL, 'Virtuoso backend host.', $host);
+    $command->addOption('username', '', InputOption::VALUE_OPTIONAL, 'Virtuoso backend username.', $username);
+    $command->addOption('password', '', InputOption::VALUE_OPTIONAL, 'Virtuoso backend password.', $password);
+  }
+
+  /**
    * Fetch data.
    *
    * @command fetch
    */
   public function fetch() {
-
     $tasks = [];
-    $tasks[] = $this->taskFilesystemStack()->mkdir($this->config->get('import_dir'));
+    $tasks[] = $this->taskFilesystemStack()->mkdir($this->input->getOption('import-dir'));
     foreach ($this->config->get('data') as $datum) {
       // Fetch raw RDF file source.
       $tasks[] = $this->taskExec('wget')->option('-O', $this->getFilePath($datum))->arg($datum['url']);
@@ -41,8 +62,9 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
    * @command import
    */
   public function import() {
+    $directory = $this->input->getOption('import-dir');
     return $this->taskRunQueries([
-      "ld_dir('./import', '*.rdf', NULL);",
+      "ld_dir('{$directory}', '*.rdf', NULL);",
       "rdf_loader_run();",
       "exec('checkpoint');",
       "WAIT_FOR_CHILDREN;",
@@ -71,12 +93,14 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
    *    Task collection.
    */
   private function taskRunQueries(array $queries) {
-    $backend = $this->getConfig()->get('backend');
+    $host = $this->input->getOption('host');
+    $username = $this->input->getOption('username');
+    $password = $this->input->getOption('password');
 
     $tasks = [];
     $tasks[] = $this->taskWriteToFile('query.sql')->append(TRUE)->lines($queries);
     $tasks[] = $this->taskExec("cat query.sql");
-    $tasks[] = $this->taskExec("isql-v -U {$backend['username']} -P {$backend['password']} < query.sql");
+    $tasks[] = $this->taskExec("isql-v -H {$host} -U {$username} -P {$password} < query.sql");
     $tasks[] = $this->taskFilesystemStack()->remove('query.sql');
 
     return $this->collectionBuilder()->addTaskList($tasks);
@@ -95,7 +119,7 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
    */
   private function getFilePath(array $datum, $format = '') {
     $format = empty($format) ? $datum['format'] : $format;
-    return $this->config->get('import_dir')."/{$datum['name']}.{$format}";
+    return $this->input->getOption('import-dir')."/{$datum['name']}.{$format}";
   }
 
 }
