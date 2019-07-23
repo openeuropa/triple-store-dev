@@ -1,3 +1,10 @@
+import_dir: "./import"
+
+backend:
+  host: "http://localhost:8890"
+  username: "dba"
+  password: "dba"
+
 data:
   - name: "corporate-body"
     graph: "http://publications.europa.eu/resource/authority/corporate-body"

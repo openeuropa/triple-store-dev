@@ -18,11 +18,11 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
    * @hook option *
    */
   public function setDefaultOptions(Command $command, AnnotationData $annotationData) {
-    // Get default values from env variables, if any.
-    $import_dir = getenv('IMPORT_DIR') ?: './import';
-    $host = getenv('DBA_HOST') ?: 'http://localhost:8890';
-    $username = getenv('DBA_USERNAME') ?: 'dba';
-    $password = getenv('DBA_PASSWORD') ?: 'dba';
+    // Make sure that default option values can be overridden by env variables.
+    $import_dir = getenv('IMPORT_DIR') ?: $this->getConfig()->get('import_dir');
+    $host = getenv('DBA_HOST') ?: $this->getConfig()->get('backend.host');
+    $username = getenv('DBA_USERNAME') ?: $this->getConfig()->get('backend.username');
+    $password = getenv('DBA_PASSWORD') ?: $this->getConfig()->get('backend.password');
 
     // Set default command options.
     $command->addOption('import-dir', '', InputOption::VALUE_OPTIONAL, 'Data import directory.', $import_dir);
