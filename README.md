@@ -55,7 +55,13 @@ Visit the RDF storage at: http://localhost:8890
 
 ## Available commands
 
-Purge all data:
+Fetch remote data:
+
+```
+$ docker exec triple-store-dev ./vendor/bin/robo fetch
+```
+
+Purge all data, to be ran before `import`:
 
 ```
 $ docker exec triple-store-dev ./vendor/bin/robo purge
@@ -66,6 +72,30 @@ Import default data:
 ```
 $ docker exec triple-store-dev ./vendor/bin/robo import
 ```
+
+All commands above accept the following options:
+
+```
+--import-dir[=IMPORT-DIR]        Data import directory. [default: "./import"]
+--host[=HOST]                    Virtuoso backend host. [default: "localhost"]
+--port[=PORT]                    Virtuoso backend port. [default: 1111]
+--username[=USERNAME]            Virtuoso backend username. [default: "dba"]
+--password[=PASSWORD]            Virtuoso backend password. [default: "dba"]
+```
+
+Passing these options to a command will override their related default value set in `robo.yml`.
+
+Option values can also be set using the following environment variables:
+
+```
+IMPORT_DIR
+DBA_HOST
+DBA_PORT
+DBA_USERNAME
+DBA_PASSWORD
+```
+
+Default values set via environment variables will override values set in `robo.yml`.
 
 ## Working with Docker Compose
 

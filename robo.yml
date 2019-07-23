@@ -1,7 +1,8 @@
 import_dir: "./import"
 
 backend:
-  host: "http://localhost:8890"
+  host: "localhost"
+  port: 1111
   username: "dba"
   password: "dba"
 

@@ -21,12 +21,14 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
     // Make sure that default option values can be overridden by env variables.
     $import_dir = getenv('IMPORT_DIR') ?: $this->getConfig()->get('import_dir');
     $host = getenv('DBA_HOST') ?: $this->getConfig()->get('backend.host');
+    $port = getenv('DBA_PORT') ?: $this->getConfig()->get('backend.port');
     $username = getenv('DBA_USERNAME') ?: $this->getConfig()->get('backend.username');
     $password = getenv('DBA_PASSWORD') ?: $this->getConfig()->get('backend.password');
 
     // Set default command options.
     $command->addOption('import-dir', '', InputOption::VALUE_OPTIONAL, 'Data import directory.', $import_dir);
     $command->addOption('host', '', InputOption::VALUE_OPTIONAL, 'Virtuoso backend host.', $host);
+    $command->addOption('port', '', InputOption::VALUE_OPTIONAL, 'Virtuoso backend port.', $port);
     $command->addOption('username', '', InputOption::VALUE_OPTIONAL, 'Virtuoso backend username.', $username);
     $command->addOption('password', '', InputOption::VALUE_OPTIONAL, 'Virtuoso backend password.', $password);
   }
@@ -94,13 +96,14 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
    */
   private function taskRunQueries(array $queries) {
     $host = $this->input->getOption('host');
+    $port = $this->input->getOption('port');
     $username = $this->input->getOption('username');
     $password = $this->input->getOption('password');
 
     $tasks = [];
     $tasks[] = $this->taskWriteToFile('query.sql')->append(TRUE)->lines($queries);
     $tasks[] = $this->taskExec("cat query.sql");
-    $tasks[] = $this->taskExec("isql-v -H {$host} -U {$username} -P {$password} < query.sql");
+    $tasks[] = $this->taskExec("isql-v -H {$host} -S {$port} -U {$username} -P {$password} < query.sql");
     $tasks[] = $this->taskFilesystemStack()->remove('query.sql');
 
     return $this->collectionBuilder()->addTaskList($tasks);

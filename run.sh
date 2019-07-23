@@ -11,7 +11,6 @@ if [ ! -f ".data_imported" ] ;
 then
     # Start Virtuoso in background.
     virtuoso-t +configfile /virtuoso.ini +wait
-    mv $IMPORT_DIR .
 
     # Import triples.
     ./vendor/bin/robo purge
@@ -24,4 +23,5 @@ then
     kill $(pidof virtuoso-t)
 fi
 
+sleep 10
 exec virtuoso-t +configfile /virtuoso.ini +wait +foreground
