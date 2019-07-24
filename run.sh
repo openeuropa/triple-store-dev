@@ -23,5 +23,7 @@ then
     kill $(pidof virtuoso-t)
 fi
 
+echo "Going to sleep..."
 sleep 10
+echo "Starting Virtuoso..."
 exec virtuoso-t +configfile /virtuoso.ini +wait +foreground
