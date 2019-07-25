@@ -1,9 +1,10 @@
-import_dir: "${env.IMPORT_DIR}"
+import_dir: "./import"
 
 backend:
-  base_url: "http://localhost:8890"
+  host: "localhost"
+  port: 1111
   username: "dba"
-  password: "${env.DBA_PASSWORD}"
+  password: "dba"
 
 data:
   - name: "corporate-body"
