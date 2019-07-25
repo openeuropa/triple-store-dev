@@ -12,9 +12,13 @@ if [ ! -f ".data_imported" ] ;
 then
     echo "Starting Virtuoso in background..."
     exec virtuoso-t +configfile /virtuoso.ini +wait +foreground &
-    sleep 10
 
-    echo "Importing data..."
+    echo "Waiting for Virtuoso to be ready on 1111..."
+    while ! nc -z localhost 1111; do
+      sleep 2
+    done
+
+    echo "Virtuoso ready, importing data..."
     ./vendor/bin/robo purge
     ./vendor/bin/robo import
     touch .data_imported

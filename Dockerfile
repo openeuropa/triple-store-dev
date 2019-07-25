@@ -14,7 +14,7 @@ FROM tenforce/virtuoso:1.3.1-virtuoso7.2.2
 ENV IMPORT_DIR /tmp/import
 ENV DBA_PASSWORD dba
 
-RUN apt-get update && apt-get install -qq -y wget curl php7.0 php7.0-zip
+RUN apt-get update && apt-get install -qq -y wget curl php7.0 php7.0-zip netcat
 
 COPY --from=build /app .
 
