@@ -109,8 +109,6 @@ services:
     image: openeuropa/triple-store-dev
     ports:
       - 8890:8890
-    environment:
-      DBA_PASSWORD: dba
 ```
 
 For more information about Docker Compose configuration check the parent Docker image
