@@ -1,10 +1,35 @@
+# ==============================================================================
+# Pull request clone ===========================================================
+# ==============================================================================
+# Use plugin to checkout pull requests for caching issue:
+# https://github.com/drone/drone/issues/2390
+# ==============================================================================
+clone:
+  git:
+    image: plugins/git:next
+    when:
+      event: [ push, tag ]
+
+# ==============================================================================
+# Deployment pipeline ==========================================================
+# ==============================================================================
 pipeline:
   publish-docker-image:
-    group: docker-image
     image: plugins/docker
     repo: openeuropa/triple-store-dev
     dockerfile: Dockerfile
     secrets: [ docker_username, docker_password ]
     when:
+      event: [ push ]
       branch: master
-      event: push
+
+  publish-docker-image-tag:
+    image: plugins/docker
+    repo: openeuropa/triple-store-dev
+    dockerfile: Dockerfile
+    tags:
+      - ${DRONE_TAG}
+    secrets: [ docker_username, docker_password ]
+    when:
+      event: [ tag ]
+      branch: master
