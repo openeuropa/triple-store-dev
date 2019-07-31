@@ -13,5 +13,8 @@
         "platform": {
             "php": "7.0"
         }
+    },
+    "scripts": {
+        "changelog": "docker run --rm -v \"$(pwd):$(pwd)\" -w $(pwd) muccg/github-changelog-generator openeuropa/triple-store-dev -t $CHANGELOG_GITHUB_TOKEN --future-release=$CHANGELOG_FUTURE_RELEASE"
     }
 }
