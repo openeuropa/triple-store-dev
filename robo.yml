@@ -40,8 +40,8 @@ data:
 
   - name: "europa-digital-thesaurus"
     graph: "http://data.europa.eu/uxp"
-    url: "https://raw.githubusercontent.com/openeuropa/triple-store-dev/OPENEUROPA-2101/local_config/08-2019.zip"
-    file: "DET August 2019 edited export.rdf"
+    url: "http://publications.europa.eu/resource/cellar/1deb8f26-d93d-11e9-9c4e-01aa75ed71a1.0001.01/DOC_1"
+    file: "skos-core.rdf"
     format: "zip"
 
   - name: "place"
