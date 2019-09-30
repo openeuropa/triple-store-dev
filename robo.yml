@@ -7,29 +7,20 @@ backend:
   password: "dba"
 
 data:
-  - name: "corporate-body"
-    graph: "http://publications.europa.eu/resource/authority/corporate-body"
-    url: "http://publications.europa.eu/resource/distribution/corporate-body/20190220-0/rdf/skos_ap_act/corporatebodies-skos-ap-act.rdf"
-    format: "rdf"
-
   - name: "corporate-body-classification"
     graph: "http://publications.europa.eu/resource/authority/corporate-body-classification"
     url: "http://publications.europa.eu/resource/distribution/corporate-body-classification/20180926-0/rdf/skos_core/corporate-body-classification-skos.rdf"
     format: "rdf"
 
-  - name: "target-audience"
-    graph: "http://publications.europa.eu/resource/authority/target-audience"
-    url: "http://publications.europa.eu/resource/cellar/4cb35e04-75c5-11e7-b2f2-01aa75ed71a1.0001.08/DOC_1"
+  - name: "corporate-body"
+    graph: "http://publications.europa.eu/resource/authority/corporate-body"
+    url: "http://publications.europa.eu/resource/distribution/corporate-body/20190220-0/rdf/skos_ap_act/corporatebodies-skos-ap-act.rdf"
     format: "rdf"
 
-  - name: "organization-type"
-    graph: "http://publications.europa.eu/resource/authority/organization-type"
-    url: "http://publications.europa.eu/resource/cellar/a8bcd901-17b8-11e8-ac73-01aa75ed71a1.0001.06/DOC_1"
-    format: "rdf"
-
-  - name: "resource-type"
-    graph: "http://publications.europa.eu/resource/authority/resource-type"
-    url: "http://publications.europa.eu/resource/cellar/07fa8597-2b56-11e7-9412-01aa75ed71a1.0001.10/DOC_1"
+  - name: "digital-europa-thesaurus"
+    graph: "http://data.europa.eu/uxp"
+    url: "http://publications.europa.eu/resource/cellar/1deb8f26-d93d-11e9-9c4e-01aa75ed71a1.0001.02/DOC_1"
+    file: "digital-europa-thesaurus.rdf"
     format: "rdf"
 
   - name: "eurovoc-thesaurus"
@@ -38,10 +29,9 @@ data:
     file: "eurovoc_in_skos_core_concepts.rdf"
     format: "zip"
 
-  - name: "digital-europa-thesaurus"
-    graph: "http://data.europa.eu/uxp"
-    url: "http://publications.europa.eu/resource/cellar/1deb8f26-d93d-11e9-9c4e-01aa75ed71a1.0001.02/DOC_1"
-    file: "digital-europa-thesaurus.rdf"
+  - name: "organization-type"
+    graph: "http://publications.europa.eu/resource/authority/organization-type"
+    url: "http://publications.europa.eu/resource/cellar/a8bcd901-17b8-11e8-ac73-01aa75ed71a1.0001.06/DOC_1"
     format: "rdf"
 
   - name: "place"
@@ -52,4 +42,14 @@ data:
   - name: "public-event"
     graph: "http://publications.europa.eu/resource/dataset/public-event-type"
     url: "http://publications.europa.eu/resource/distribution/public-event-type/20180926-0/rdf/skos_core/public-event-type-skos.rdf"
+    format: "rdf"
+
+  - name: "resource-type"
+    graph: "http://publications.europa.eu/resource/authority/resource-type"
+    url: "http://publications.europa.eu/resource/cellar/07fa8597-2b56-11e7-9412-01aa75ed71a1.0001.10/DOC_1"
+    format: "rdf"
+
+  - name: "target-audience"
+    graph: "http://publications.europa.eu/resource/authority/target-audience"
+    url: "http://publications.europa.eu/resource/cellar/4cb35e04-75c5-11e7-b2f2-01aa75ed71a1.0001.08/DOC_1"
     format: "rdf"
