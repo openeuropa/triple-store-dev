@@ -10,15 +10,15 @@ based on [OpenLink Virtuoso](https://virtuoso.openlinksw.com).
 
 The following RDF triples will be imported once the service starts:
 
-- [Corporate body classification](http://publications.europa.eu/resource/distribution/corporate-body-classification/20180926-0/rdf/skos_core/corporate-body-classification-skos.rdf)
-- [Corporate body](http://publications.europa.eu/resource/distribution/corporate-body/20190220-0/rdf/skos_ap_act/corporatebodies-skos-ap-act.rdf)
-- [Digital Europa Thesaurus](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/det)
-- [EuroVoc Thesaurus](https://publications.europa.eu/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc)
-- [Organization type](http://publications.europa.eu/resource/cellar/a8bcd901-17b8-11e8-ac73-01aa75ed71a1.0001.06/DOC_1)  
-- [Place](http://publications.europa.eu/resource/distribution/place/20181212-0/rdf/skos_core/places-skos.rdf)
-- [Public event type](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/public-event-type)
-- [Resource type](http://publications.europa.eu/resource/cellar/07fa8597-2b56-11e7-9412-01aa75ed71a1.0001.10/DOC_1)
-- [Target audience](http://publications.europa.eu/resource/cellar/4cb35e04-75c5-11e7-b2f2-01aa75ed71a1.0001.08/DOC_1)  
+- [Corporate body classification](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/corporate-body-classification/version-20180926-0)
+- [Corporate body](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/corporate-body/version-20190220)
+- [Digital Europa Thesaurus](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/det/version-1.0.0)
+- [EuroVoc Thesaurus](https://publications.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc/version-20190329-1)
+- [Organization type](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/organization-type/version-20170920-0)
+- [Place](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/place/version-20181212-0)
+- [Public event type](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/public-event-type/version-20180926-0)
+- [Resource type](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type/version-20190918-0)
+- [Target audience](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/target-audience/version-20180620-0)
 
 New default content can be added to [`robo.yml`](./robo.yml) as shown below:
 

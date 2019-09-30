@@ -39,7 +39,7 @@ data:
     url: "http://publications.europa.eu/resource/distribution/place/20181212-0/rdf/skos_core/places-skos.rdf"
     format: "rdf"
 
-  - name: "public-event"
+  - name: "public-event-type"
     graph: "http://publications.europa.eu/resource/dataset/public-event-type"
     url: "http://publications.europa.eu/resource/distribution/public-event-type/20180926-0/rdf/skos_core/public-event-type-skos.rdf"
     format: "rdf"
