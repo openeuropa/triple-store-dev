@@ -38,11 +38,11 @@ data:
     file: "eurovoc_in_skos_core_concepts.rdf"
     format: "zip"
 
-  - name: "europa-digital-thesaurus"
+  - name: "digital-europa-thesaurus"
     graph: "http://data.europa.eu/uxp"
-    url: "http://publications.europa.eu/resource/cellar/1deb8f26-d93d-11e9-9c4e-01aa75ed71a1.0001.01/DOC_1"
-    file: "skos-core.rdf"
-    format: "zip"
+    url: "http://publications.europa.eu/resource/cellar/1deb8f26-d93d-11e9-9c4e-01aa75ed71a1.0001.02/DOC_1"
+    file: "digital-europa-thesaurus.rdf"
+    format: "rdf"
 
   - name: "place"
     graph: "http://publications.europa.eu/resource/dataset/place"
