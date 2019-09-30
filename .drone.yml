@@ -10,10 +10,24 @@ clone:
     when:
       event: [ push, tag ]
 
-# ==============================================================================
-# Deployment pipeline ==========================================================
-# ==============================================================================
+services:
+  docker:
+    image: docker:18-dind
+    privileged: true
+
 pipeline:
+
+  # Test image build.
+  build:
+    image: docker:18-dind
+    environment:
+      - DOCKER_HOST=tcp://docker:2375
+    commands:
+      - sleep 10
+      - docker ps
+      - docker build -t openeuropa/triple-store-dev .
+
+  # Deploy image.
   publish-docker-image:
     image: plugins/docker
     repo: openeuropa/triple-store-dev
