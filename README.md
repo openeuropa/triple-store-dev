@@ -6,7 +6,7 @@ based on [OpenLink Virtuoso](https://virtuoso.openlinksw.com).
 > ### Important
 > The EU Publications Office released the official Digital Europa Thesaurus vocabulary. Prior to version 1.1.0 a local
 > temporary copy of said vocabulary was being used. Please ensure to update to a newer version. More information
-> in the [below section](#updating-from-version-1.0.0).
+> in the [below section](#updating-from-version-100).
 
 The following RDF triples will be imported once the service starts:
 
