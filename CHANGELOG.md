@@ -1,8 +1,16 @@
 # Change Log
 
+## [1.1.0](https://github.com/openeuropa/triple-store-dev/tree/1.1.0) (2019-09-30)
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.0.0...1.1.0)
+
+**Merged pull requests:**
+
+- OPENEUROPA-2101: Use official Digital Europa Thesaurus vocabulary [\#13](https://github.com/openeuropa/triple-store-dev/pull/13) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.0.0](https://github.com/openeuropa/triple-store-dev/tree/1.0.0) (2019-07-31)
 **Merged pull requests:**
 
+- Update CHANGELOG.md for release 1.0.0 [\#12](https://github.com/openeuropa/triple-store-dev/pull/12) ([ademarco](https://github.com/ademarco))
 - OPENEUROPA-2063: Wait for Virtuoso to be ready on 1111 instead of sleeping for 10 seconds [\#11](https://github.com/openeuropa/triple-store-dev/pull/11) ([ademarco](https://github.com/ademarco))
 - OPENEUROPA-2063: Use command options to pass configuration parameters. [\#10](https://github.com/openeuropa/triple-store-dev/pull/10) ([ademarco](https://github.com/ademarco))
 - OPENEUROPA-1761: Add configuration file. [\#9](https://github.com/openeuropa/triple-store-dev/pull/9) ([imanoleguskiza](https://github.com/imanoleguskiza))
