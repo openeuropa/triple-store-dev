@@ -17,6 +17,11 @@ data:
     url: "http://publications.europa.eu/resource/distribution/corporate-body/20190220-0/rdf/skos_ap_act/corporatebodies-skos-ap-act.rdf"
     format: "rdf"
 
+  - name: "country"
+    graph: "http://publications.europa.eu/resource/authority/country"
+    url: "http://publications.europa.eu/resource/cellar/d16b0877-d895-11e9-9c4e-01aa75ed71a1.0001.05/DOC_1"
+    format: "rdf"
+
   - name: "digital-europa-thesaurus"
     graph: "http://data.europa.eu/uxp"
     url: "http://publications.europa.eu/resource/cellar/1deb8f26-d93d-11e9-9c4e-01aa75ed71a1.0001.02/DOC_1"
