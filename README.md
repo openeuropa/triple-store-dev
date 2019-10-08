@@ -12,6 +12,7 @@ The following RDF triples will be imported once the service starts:
 
 - [Corporate body classification](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/corporate-body-classification/version-20180926-0)
 - [Corporate body](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/corporate-body/version-20190220)
+- [Country](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/country/version-20190918-0)
 - [Digital Europa Thesaurus](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/det/version-1.0.0)
 - [EuroVoc Thesaurus](https://publications.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc/version-20190329-1)
 - [Organization type](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/organization-type/version-20170920-0)
