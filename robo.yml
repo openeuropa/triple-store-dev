@@ -34,6 +34,11 @@ data:
     file: "eurovoc_in_skos_core_concepts.rdf"
     format: "zip"
 
+  - name: "language"
+    graph: "http://publications.europa.eu/resource/authority/language"
+    url: "http://publications.europa.eu/resource/cellar/e887963f-d894-11e9-9c4e-01aa75ed71a1.0001.05/DOC_1"
+    format: "rdf"
+
   - name: "organization-type"
     graph: "http://publications.europa.eu/resource/authority/organization-type"
     url: "http://publications.europa.eu/resource/cellar/a8bcd901-17b8-11e8-ac73-01aa75ed71a1.0001.06/DOC_1"
