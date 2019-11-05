@@ -1,10 +1,19 @@
 # Change Log
 
+## [1.2.0](https://github.com/openeuropa/triple-store-dev/tree/1.2.0) (2019-11-05)
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.1.0...1.2.0)
+
+**Merged pull requests:**
+
+- OPENEUROPA-2202: Add languages vocabulary. [\#17](https://github.com/openeuropa/triple-store-dev/pull/17) ([nagyad](https://github.com/nagyad))
+- OPENEUROPA-2224: Add Country corporate vocabulary. [\#16](https://github.com/openeuropa/triple-store-dev/pull/16) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.1.0](https://github.com/openeuropa/triple-store-dev/tree/1.1.0) (2019-09-30)
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.0.0...1.1.0)
 
 **Merged pull requests:**
 
+- Update CHANGELOG.md for release 1.1.0. [\#14](https://github.com/openeuropa/triple-store-dev/pull/14) ([ademarco](https://github.com/ademarco))
 - OPENEUROPA-2101: Use official Digital Europa Thesaurus vocabulary [\#13](https://github.com/openeuropa/triple-store-dev/pull/13) ([sergepavle](https://github.com/sergepavle))
 
 ## [1.0.0](https://github.com/openeuropa/triple-store-dev/tree/1.0.0) (2019-07-31)
