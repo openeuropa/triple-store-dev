@@ -15,6 +15,7 @@ The following RDF triples will be imported once the service starts:
 - [Country](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/country/version-20190918-0)
 - [Digital Europa Thesaurus](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/det/version-1.0.0)
 - [EuroVoc Thesaurus](https://publications.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc/version-20190329-1)
+- [EU Programme](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/eu-programme/version-20180725-0)
 - [Language](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/language/version-20190918-0)
 - [Organization type](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/organization-type/version-20170920-0)
 - [Place](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/place/version-20181212-0)
