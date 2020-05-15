@@ -14,24 +14,24 @@ data:
 
   - name: "corporate-body"
     graph: "http://publications.europa.eu/resource/authority/corporate-body"
-    url: "http://publications.europa.eu/resource/distribution/corporate-body/20190220-0/rdf/skos_ap_act/corporatebodies-skos-ap-act.rdf"
+    url: "http://publications.europa.eu/resource/cellar/086366ae-6891-11ea-b735-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "country"
     graph: "http://publications.europa.eu/resource/authority/country"
-    url: "http://publications.europa.eu/resource/cellar/d16b0877-d895-11e9-9c4e-01aa75ed71a1.0001.05/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/2c0fa248-6891-11ea-b735-01aa75ed71a1.0001.04/DOC_1"
     format: "rdf"
 
   - name: "digital-europa-thesaurus"
     graph: "http://data.europa.eu/uxp"
-    url: "http://publications.europa.eu/resource/cellar/1deb8f26-d93d-11e9-9c4e-01aa75ed71a1.0001.02/DOC_1"
-    file: "digital-europa-thesaurus.rdf"
-    format: "rdf"
+    url: "http://publications.europa.eu/resource/cellar/1b54fa80-69f1-11ea-b735-01aa75ed71a1.0001.04/DOC_1"
+    file: "DET-skos-core.rdf"
+    format: "zip"
 
   - name: "eurovoc-thesaurus"
     graph: "http://publications.europa.eu/resource/dataset/eurovoc"
-    url: "http://publications.europa.eu/resource/cellar/9f2bd600-ae7b-11e7-837e-01aa75ed71a1.0001.09/DOC_1"
-    file: "eurovoc_in_skos_core_concepts.rdf"
+    url: "http://publications.europa.eu/resource/cellar/e89b817a-429f-11ea-b81b-01aa75ed71a1.0001.04/DOC_1"
+    file: "eurovoc_in_skos_core_concepts - Copy.rdf"
     format: "zip"
 
   - name: "language"
@@ -46,7 +46,7 @@ data:
 
   - name: "place"
     graph: "http://publications.europa.eu/resource/dataset/place"
-    url: "http://publications.europa.eu/resource/distribution/place/20181212-0/rdf/skos_core/places-skos.rdf"
+    url: "http://publications.europa.eu/resource/cellar/3306cc97-4366-11ea-b81b-01aa75ed71a1.0001.02/DOC_1"
     format: "rdf"
 
   - name: "public-event-type"
@@ -56,7 +56,7 @@ data:
 
   - name: "resource-type"
     graph: "http://publications.europa.eu/resource/authority/resource-type"
-    url: "http://publications.europa.eu/resource/cellar/07fa8597-2b56-11e7-9412-01aa75ed71a1.0001.10/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/084ea62d-6891-11ea-b735-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "target-audience"

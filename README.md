@@ -11,15 +11,15 @@ based on [OpenLink Virtuoso](https://virtuoso.openlinksw.com).
 The following RDF triples will be imported once the service starts:
 
 - [Corporate body classification](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/corporate-body-classification/version-20180926-0)
-- [Corporate body](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/corporate-body/version-20190220)
-- [Country](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/country/version-20190918-0)
-- [Digital Europa Thesaurus](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/det/version-1.0.0)
-- [EuroVoc Thesaurus](https://publications.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc/version-20190329-1)
+- [Corporate body](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/corporate-body/version-20200318-0)
+- [Country](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/country/version-20200318-0)
+- [Digital Europa Thesaurus](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/det/version-1.1.0)
+- [EuroVoc Thesaurus](https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc/version-20200131-0)
 - [Language](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/language/version-20190918-0)
 - [Organization type](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/organization-type/version-20170920-0)
-- [Place](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/place/version-20181212-0)
+- [Place](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/place/version-20200131-0)
 - [Public event type](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/public-event-type/version-20180926-0)
-- [Resource type](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type/version-20190918-0)
+- [Resource type](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type/version-20200318-0)
 - [Target audience](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/target-audience/version-20180620-0)
 
 New default content can be added to [`robo.yml`](./robo.yml) as shown below:
@@ -42,7 +42,7 @@ data:
     url: "http://publications.europa.eu/resource/cellar/9f2bd600-ae7b-11e7-837e-01aa75ed71a1.0001.09/DOC_1"
     file: "eurovoc_in_skos_core_concepts.rdf"
     format: "zip"
-``` 
+```
 
 ## Build and run
 
@@ -135,13 +135,13 @@ In the `docker-compose.yml` of the testing project (i.e. the `oe_content` module
 Given that all your services are down, to rebuild run the following:
 
 ```
-docker-compose build --force-rm --no-cache sparql 
+docker-compose build --force-rm --no-cache sparql
 docker-compose up -d
 ```
 
 ## Changelog
 
-The changelog is generated using a local docker installation which installs 
+The changelog is generated using a local docker installation which installs
 [muccg/docker-github-changelog-generator](https://github.com/muccg/docker-github-changelog-generator)
 
 This reads the [Github API](https://api.github.com/repos/openeuropa/triple-store-dev) for the required repository and
@@ -150,8 +150,8 @@ writes the CHANGELOG.md to the root of the repository.
 **Prerequisites**
 
 - Local Docker machine running.
-- A [Github Access Token](https://github.com/settings/tokens) should be generated and exported (or written to ~/.gitconfig) 
-  as `CHANGELOG_GITHUB_TOKEN=<YOUR TOKEN HERE>`  
+- A [Github Access Token](https://github.com/settings/tokens) should be generated and exported (or written to ~/.gitconfig)
+  as `CHANGELOG_GITHUB_TOKEN=<YOUR TOKEN HERE>`
 
 Before tagging a new release export the following:
 
