@@ -50,7 +50,7 @@ data:
 Build:
 
 ```
-$ docker build . -t openeuropa/triple-store-dev2
+$ docker build . -t openeuropa/triple-store-dev
 ```
 
 Run:
