@@ -14,34 +14,34 @@ data:
 
   - name: "corporate-body"
     graph: "http://publications.europa.eu/resource/authority/corporate-body"
-    url: "http://publications.europa.eu/resource/cellar/086366ae-6891-11ea-b735-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/82f69dd3-b59b-11ea-bb7a-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "country"
     graph: "http://publications.europa.eu/resource/authority/country"
-    url: "http://publications.europa.eu/resource/cellar/2c0fa248-6891-11ea-b735-01aa75ed71a1.0001.04/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/82f453e2-b59b-11ea-bb7a-01aa75ed71a1.0001.04/DOC_1"
     format: "rdf"
 
   - name: "digital-europa-thesaurus"
     graph: "http://data.europa.eu/uxp"
-    url: "http://publications.europa.eu/resource/cellar/1b54fa80-69f1-11ea-b735-01aa75ed71a1.0001.04/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/cd672678-b666-11ea-bb7a-01aa75ed71a1.0001.04/DOC_1"
     file: "DET-skos-core.rdf"
     format: "zip"
 
   - name: "eurovoc-thesaurus"
     graph: "http://publications.europa.eu/resource/dataset/eurovoc"
-    url: "http://publications.europa.eu/resource/cellar/e89b817a-429f-11ea-b81b-01aa75ed71a1.0001.04/DOC_1"
-    file: "eurovoc_in_skos_core_concepts - Copy.rdf"
+    url: "http://publications.europa.eu/resource/cellar/d707f2d7-bcbb-11ea-811c-01aa75ed71a1.0001.04/DOC_1"
+    file: "eurovoc_in_skos_core_concepts.rdf"
     format: "zip"
 
   - name: "eu-programme"
     graph: "http://publications.europa.eu/resource/authority/eu-programme"
-    url: "http://publications.europa.eu/resource/cellar/b5e315b6-91b0-11e8-8bc1-01aa75ed71a1.0001.02/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/82e5fbfa-b59b-11ea-bb7a-01aa75ed71a1.0001.02/DOC_1"
     format: "rdf"
 
   - name: "language"
     graph: "http://publications.europa.eu/resource/authority/language"
-    url: "http://publications.europa.eu/resource/cellar/e887963f-d894-11e9-9c4e-01aa75ed71a1.0001.05/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/82fda2b4-b59b-11ea-bb7a-01aa75ed71a1.0001.04/DOC_1"
     format: "rdf"
 
   - name: "organization-type"
@@ -51,7 +51,7 @@ data:
 
   - name: "place"
     graph: "http://publications.europa.eu/resource/dataset/place"
-    url: "http://publications.europa.eu/resource/cellar/3306cc97-4366-11ea-b81b-01aa75ed71a1.0001.02/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/9d27a236-b59b-11ea-bb7a-01aa75ed71a1.0001.02/DOC_1"
     format: "rdf"
 
   - name: "public-event-type"
@@ -61,7 +61,7 @@ data:
 
   - name: "resource-type"
     graph: "http://publications.europa.eu/resource/authority/resource-type"
-    url: "http://publications.europa.eu/resource/cellar/084ea62d-6891-11ea-b735-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/5f433641-b59b-11ea-bb7a-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "target-audience"
