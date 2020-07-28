@@ -11,16 +11,16 @@ based on [OpenLink Virtuoso](https://virtuoso.openlinksw.com).
 The following RDF triples will be imported once the service starts:
 
 - [Corporate body classification](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/corporate-body-classification/version-20180926-0)
-- [Corporate body](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/corporate-body/version-20200318-0)
-- [Country](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/country/version-20200318-0)
-- [Digital Europa Thesaurus](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/det/version-1.1.0)
-- [EuroVoc Thesaurus](https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc/version-20200131-0)
-- [EU Programme](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/eu-programme/version-20180725-0)
-- [Language](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/language/version-20190918-0)
+- [Corporate body](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/corporate-body/version-20200624-0)
+- [Country](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/country/version-20200624-0)
+- [Digital Europa Thesaurus](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/det/version-1.2.0)
+- [EuroVoc Thesaurus](https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc/version-20200630-0)
+- [EU Programme](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/eu-programme/version-20200624-0)
+- [Language](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/language/version-20200624-0)
 - [Organization type](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/organization-type/version-20170920-0)
-- [Place](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/place/version-20200131-0)
+- [Place](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/place/version-20200624-0)
 - [Public event type](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/public-event-type/version-20180926-0)
-- [Resource type](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type/version-20200318-0)
+- [Resource type](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type/version-20200624-0)
 - [Target audience](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/target-audience/version-20180620-0)
 
 New default content can be added to [`robo.yml`](./robo.yml) as shown below:
