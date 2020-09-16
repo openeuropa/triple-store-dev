@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.4.0](https://github.com/openeuropa/triple-store-dev/tree/1.4.0) (2020-09-16)
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.3.0...1.4.0)
+
+**Merged pull requests:**
+
+- EWPP-71: Update version of vocabularies. [\#22](https://github.com/openeuropa/triple-store-dev/pull/22) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.3.0](https://github.com/openeuropa/triple-store-dev/tree/1.3.0) (2020-05-20)
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.2.0...1.3.0)
 
