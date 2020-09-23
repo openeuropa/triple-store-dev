@@ -20,6 +20,7 @@ data:
   - name: "country"
     graph: "http://publications.europa.eu/resource/authority/country"
     url: "http://publications.europa.eu/resource/cellar/82f453e2-b59b-11ea-bb7a-01aa75ed71a1.0001.04/DOC_1"
+    file: "countries-skos-ap-act.rdf"
     format: "rdf"
 
   - name: "digital-europa-thesaurus"
