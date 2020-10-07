@@ -56,7 +56,7 @@ data:
 
   - name: "public-event-type"
     graph: "http://publications.europa.eu/resource/dataset/public-event-type"
-    url: "http://publications.europa.eu/resource/distribution/public-event-type/20180926-0/rdf/skos_core/public-event-type-skos.rdf"
+    url: "http://publications.europa.eu/resource/cellar/465c3d01-fdd6-11ea-b44f-01aa75ed71a1.0001.01/DOC_1"
     format: "rdf"
 
   - name: "resource-type"
