@@ -68,3 +68,8 @@ data:
     graph: "http://publications.europa.eu/resource/authority/target-audience"
     url: "http://publications.europa.eu/resource/cellar/4cb35e04-75c5-11e7-b2f2-01aa75ed71a1.0001.08/DOC_1"
     format: "rdf"
+
+  - name: "k4p-digital-thesaurus"
+    graph: "http://data.europa.eu/k4p/k4p-plus/k4p_digital_thesaurus"
+    url: "http://publications.europa.eu/resource/authority/k4p/k4p-plus/k4p_digital_thesaurus"
+    format: "rdf"
