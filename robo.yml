@@ -71,5 +71,5 @@ data:
 
   - name: "k4p-digital-thesaurus"
     graph: "http://data.europa.eu/k4p/k4p-plus/k4p_digital_thesaurus"
-    url: "http://publications.europa.eu/resource/authority/k4p/k4p-plus/k4p_digital_thesaurus"
+    url: "http://publications.europa.eu/resource/cellar/dddf7fbb-c77e-11ea-adf7-01aa75ed71a1.0001.01/DOC_1"
     format: "rdf"
