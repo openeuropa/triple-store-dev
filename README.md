@@ -22,7 +22,7 @@ The following RDF triples will be imported once the service starts:
 - [Public event type](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/public-event-type/version-20180926-0)
 - [Resource type](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type/version-20200624-0)
 - [Target audience](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/target-audience/version-20180620-0)
-- [Orphan terms Thesaurus Drupal 7](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/k4p-list)
+- [Knowledge4Policy list](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/k4p-list)
 
 New default content can be added to [`robo.yml`](./robo.yml) as shown below:
 
