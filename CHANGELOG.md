@@ -1,11 +1,20 @@
 # Changelog
 
+## [1.6.0](https://github.com/openeuropa/triple-store-dev/tree/1.6.0) (2020-11-16)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.5.0...1.6.0)
+
+**Merged pull requests:**
+
+- EWPP-382: Include the "k4p-digital-thesaurus" vocabulary in the corporate Virtuoso. [\#27](https://github.com/openeuropa/triple-store-dev/pull/27) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.5.0](https://github.com/openeuropa/triple-store-dev/tree/1.5.0) (2020-10-07)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.4.0...1.5.0)
 
 **Merged pull requests:**
 
+- Prepare for 1.15.0 release. [\#26](https://github.com/openeuropa/triple-store-dev/pull/26) ([imanoleguskiza](https://github.com/imanoleguskiza))
 - EWPP-370: Update public event type rdf. [\#25](https://github.com/openeuropa/triple-store-dev/pull/25) ([nagyad](https://github.com/nagyad))
 
 ## [1.4.0](https://github.com/openeuropa/triple-store-dev/tree/1.4.0) (2020-09-16)
