@@ -30,6 +30,7 @@ pipeline:
   # Deploy image to Docker Hub.
   publish-docker-image:
     image: registry.fpfis.eu/drone-plugins/docker
+    privileged: true
     repo: openeuropa/triple-store-dev
     dockerfile: Dockerfile
     secrets: [ DOCKER_USERNAME, DOCKER_PASSWORD ]
@@ -39,6 +40,7 @@ pipeline:
 
   publish-docker-image-tag:
     image: registry.fpfis.eu/drone-plugins/docker
+    privileged: true
     repo: openeuropa/triple-store-dev
     dockerfile: Dockerfile
     tags:
@@ -51,6 +53,7 @@ pipeline:
   # Deploy image to Gitlab.
   publish-docker-image-gitlab:
     image: registry.fpfis.eu/drone-plugins/docker
+    privileged: true
     repo: registry.fpfis.eu/openeuropa/triple-store-dev
     dockerfile: Dockerfile
     secrets:
@@ -64,6 +67,7 @@ pipeline:
 
   publish-docker-image-tag-gitlab:
     image: registry.fpfis.eu/drone-plugins/docker
+    privileged: true
     repo: registry.fpfis.eu/openeuropa/triple-store-dev
     dockerfile: Dockerfile
     tags:
