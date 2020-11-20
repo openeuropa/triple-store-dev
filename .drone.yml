@@ -6,20 +6,20 @@
 # ==============================================================================
 clone:
   git:
-    image: plugins/git:next
+    image: registry.fpfis.eu/drone-plugins/git:next
     when:
       event: [ push, tag ]
 
 services:
   docker:
-    image: docker:18-dind
+    image: registry.fpfis.eu/fpfis/docker:18-dind
     privileged: true
 
 pipeline:
 
   # Test image build.
   build:
-    image: docker:18-dind
+    image: registry.fpfis.eu/fpfis/docker:18-dind
     environment:
       - DOCKER_HOST=tcp://docker:2375
     commands:
@@ -27,9 +27,9 @@ pipeline:
       - docker ps
       - docker build -t openeuropa/triple-store-dev .
 
-  # Deploy image.
+  # Deploy image to Docker Hub.
   publish-docker-image:
-    image: plugins/docker
+    image: registry.fpfis.eu/drone-plugins/docker
     repo: openeuropa/triple-store-dev
     dockerfile: Dockerfile
     secrets: [ docker_username, docker_password ]
@@ -38,12 +38,33 @@ pipeline:
       branch: master
 
   publish-docker-image-tag:
-    image: plugins/docker
+    image: registry.fpfis.eu/drone-plugins/docker
     repo: openeuropa/triple-store-dev
     dockerfile: Dockerfile
     tags:
       - ${DRONE_TAG}
     secrets: [ docker_username, docker_password ]
+    when:
+      event: [ tag ]
+      branch: master
+
+  # Deploy image to Gitlab.
+  publish-docker-image-gitlab:
+    image: registry.fpfis.eu/drone-plugins/docker
+    repo: registry.fpfis.eu/openeuropa/triple-store-dev
+    dockerfile: Dockerfile
+    secrets: [ gitlab_username, gitlab_password ]
+    when:
+      event: [ push ]
+      branch: master
+
+  publish-docker-image-tag-gitlab:
+    image: registry.fpfis.eu/drone-plugins/docker
+    repo: registry.fpfis.eu/openeuropa/triple-store-dev
+    dockerfile: Dockerfile
+    tags:
+      - ${DRONE_TAG}
+    secrets: [ gitlab_username, gitlab_password ]
     when:
       event: [ tag ]
       branch: master
