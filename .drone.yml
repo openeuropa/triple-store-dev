@@ -32,7 +32,7 @@ pipeline:
     image: registry.fpfis.eu/drone-plugins/docker
     repo: openeuropa/triple-store-dev
     dockerfile: Dockerfile
-    secrets: [ docker_username, docker_password ]
+    secrets: [ DOCKER_USERNAME, DOCKER_PASSWORD ]
     when:
       event: [ push ]
       branch: master
@@ -43,7 +43,7 @@ pipeline:
     dockerfile: Dockerfile
     tags:
       - ${DRONE_TAG}
-    secrets: [ docker_username, docker_password ]
+    secrets: [ DOCKER_USERNAME, DOCKER_PASSWORD ]
     when:
       event: [ tag ]
       branch: master
@@ -53,7 +53,11 @@ pipeline:
     image: registry.fpfis.eu/drone-plugins/docker
     repo: registry.fpfis.eu/openeuropa/triple-store-dev
     dockerfile: Dockerfile
-    secrets: [ gitlab_username, gitlab_password ]
+    secrets:
+      - source: GITLAB_USERNAME
+        target: DOCKER_USERNAME
+      - source: GITLAB_PASSWORD
+        target: DOCKER_PASSWORD
     when:
       event: [ push ]
       branch: master
@@ -64,7 +68,11 @@ pipeline:
     dockerfile: Dockerfile
     tags:
       - ${DRONE_TAG}
-    secrets: [ gitlab_username, gitlab_password ]
+    secrets:
+      - source: GITLAB_USERNAME
+        target: DOCKER_USERNAME
+      - source: GITLAB_PASSWORD
+        target: DOCKER_PASSWORD
     when:
       event: [ tag ]
       branch: master
