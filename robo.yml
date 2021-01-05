@@ -73,3 +73,8 @@ data:
     graph: "http://data.europa.eu/k4p/k4p-plus/k4p_digital_thesaurus"
     url: "http://publications.europa.eu/resource/cellar/dddf7fbb-c77e-11ea-adf7-01aa75ed71a1.0001.01/DOC_1"
     format: "rdf"
+
+  - name: "SDG"
+    graph: "http://publications.europa.eu/resource/dataset/sdg"
+    url: "http://publications.europa.eu/resource/cellar/5ea37239-0495-11eb-a511-01aa75ed71a1.0001.01/DOC_1"
+    format: "rdf"
