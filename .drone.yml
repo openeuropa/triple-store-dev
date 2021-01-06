@@ -50,6 +50,7 @@ pipeline:
     tags:
       - latest
       - ${DRONE_TAG}
+    registry: registry.fpfis.eu
     secrets:
       - source: GITLAB_USERNAME
         target: DOCKER_USERNAME
