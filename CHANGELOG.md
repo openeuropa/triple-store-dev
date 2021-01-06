@@ -1,11 +1,22 @@
 # Changelog
 
+## [1.7.0](https://github.com/openeuropa/triple-store-dev/tree/1.7.0) (2021-01-05)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.6.0...1.7.0)
+
+**Merged pull requests:**
+
+- EWPP-568: Add SDG OP vocabulary to triple store. [\#32](https://github.com/openeuropa/triple-store-dev/pull/32) ([sergepavle](https://github.com/sergepavle))
+- FPFISSUPP-9916: Make sure that Docker tag "latest" points to latest stable tag, as opposed to latest unstable master commit. [\#31](https://github.com/openeuropa/triple-store-dev/pull/31) ([voidtek](https://github.com/voidtek))
+- FPFISSUPP-9916: Publish images also to internal Gitlab repository. [\#30](https://github.com/openeuropa/triple-store-dev/pull/30) ([voidtek](https://github.com/voidtek))
+
 ## [1.6.0](https://github.com/openeuropa/triple-store-dev/tree/1.6.0) (2020-11-16)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.5.0...1.6.0)
 
 **Merged pull requests:**
 
+- Prepare for 1.6.0 release. [\#28](https://github.com/openeuropa/triple-store-dev/pull/28) ([imanoleguskiza](https://github.com/imanoleguskiza))
 - EWPP-382: Include the "k4p-digital-thesaurus" vocabulary in the corporate Virtuoso. [\#27](https://github.com/openeuropa/triple-store-dev/pull/27) ([sergepavle](https://github.com/sergepavle))
 
 ## [1.5.0](https://github.com/openeuropa/triple-store-dev/tree/1.5.0) (2020-10-07)
