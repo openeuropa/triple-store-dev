@@ -24,6 +24,7 @@ The following RDF triples will be imported once the service starts:
 - [Target audience](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/target-audience/version-20180620-0)
 - [Knowledge4Policy list](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/k4p-list)
 - [Sustainable Development Goals](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/sdg)
+- [Human sex](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/human-sex)
 
 New default content can be added to [`robo.yml`](./robo.yml) as shown below:
 
