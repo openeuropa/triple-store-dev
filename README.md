@@ -10,21 +10,21 @@ based on [OpenLink Virtuoso](https://virtuoso.openlinksw.com).
 
 The following RDF triples will be imported once the service starts:
 
-- [Corporate body classification](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/corporate-body-classification/version-20180926-0)
-- [Corporate body](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/corporate-body/version-20200624-0)
-- [Country](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/country/version-20200624-0)
-- [Digital Europa Thesaurus](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/det/version-1.2.0)
-- [EuroVoc Thesaurus](https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc/version-20200630-0)
+- [Corporate body classification](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/corporate-body-classification&version=20180926-0)
+- [Corporate body](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/corporate-body&version=20200624-0)
+- [Country](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country&version=20200624-0)
+- [Digital Europa Thesaurus](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/det&version=1.2.0)
+- [EuroVoc Thesaurus](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc&version=20200630-0)
 - [EU Programme](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eu-programme&version=20210116-0)
-- [Language](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/language/version-20200624-0)
-- [Organization type](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/organization-type/version-20170920-0)
-- [Place](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/place/version-20200624-0)
-- [Public event type](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/public-event-type/version-20180926-0)
-- [Resource type](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type/version-20200624-0)
-- [Target audience](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/target-audience/version-20180620-0)
-- [Knowledge4Policy list](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/k4p-list)
-- [Sustainable Development Goals](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/sdg)
-- [Human sex](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/human-sex)
+- [Language](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/authority/language&version=20200624-0)
+- [Organization type](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/authority/organization-type&version=20170920-0)
+- [Place](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place&version=20200624-0)
+- [Public event type](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/public-event-type&version=20180926-0)
+- [Resource type](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/authority/resource-type&version=20200624-0)
+- [Target audience](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/authority/target-audience&version=20180620-0)
+- [Knowledge4Policy list](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/k4p-list&version=1.0)
+- [Sustainable Development Goals](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/sdg&version=1.0)
+- [Human sex](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/human-sex&version=20201216-0)
 
 New default content can be added to [`robo.yml`](./robo.yml) as shown below:
 
