@@ -81,5 +81,5 @@ data:
 
   - name: "human-sex"
     graph: "http://publications.europa.eu/resource/dataset/human-sex"
-    url: "http://publications.europa.eu/resource/cellar/12e3b382-278b-11e8-ac73-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/c681236e-3efa-11eb-b27b-01aa75ed71a1.0001.02/DOC_1"
     format: "rdf"
