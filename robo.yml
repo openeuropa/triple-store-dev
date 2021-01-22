@@ -36,7 +36,7 @@ data:
 
   - name: "eu-programme"
     graph: "http://publications.europa.eu/resource/authority/eu-programme"
-    url: "http://publications.europa.eu/resource/cellar/82e5fbfa-b59b-11ea-bb7a-01aa75ed71a1.0001.02/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/9ffbffce-574e-11eb-b59f-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "language"
