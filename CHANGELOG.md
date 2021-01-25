@@ -1,11 +1,20 @@
-# Changelog
+# Change Log
 
-## [1.7.0](https://github.com/openeuropa/triple-store-dev/tree/1.7.0) (2021-01-05)
+## [1.8.0](https://github.com/openeuropa/triple-store-dev/tree/1.8.0) (2021-01-25)
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.7.0...1.8.0)
 
+**Merged pull requests:**
+
+- EWPP-669: Update EU Programme OP vocabulary. [\#36](https://github.com/openeuropa/triple-store-dev/pull/36) ([brummbar](https://github.com/brummbar))
+- EWPP-650: Add human-sex to list. [\#35](https://github.com/openeuropa/triple-store-dev/pull/35) ([drishu](https://github.com/drishu))
+- FPFISSUPP-10363: Fix update gitlab img. [\#34](https://github.com/openeuropa/triple-store-dev/pull/34) ([voidtek](https://github.com/voidtek))
+
+## [1.7.0](https://github.com/openeuropa/triple-store-dev/tree/1.7.0) (2021-01-06)
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.6.0...1.7.0)
 
 **Merged pull requests:**
 
+- Update CHANGELOG.md for release 1.7.0. [\#33](https://github.com/openeuropa/triple-store-dev/pull/33) ([sergepavle](https://github.com/sergepavle))
 - EWPP-568: Add SDG OP vocabulary to triple store. [\#32](https://github.com/openeuropa/triple-store-dev/pull/32) ([sergepavle](https://github.com/sergepavle))
 - FPFISSUPP-9916: Make sure that Docker tag "latest" points to latest stable tag, as opposed to latest unstable master commit. [\#31](https://github.com/openeuropa/triple-store-dev/pull/31) ([voidtek](https://github.com/voidtek))
 - FPFISSUPP-9916: Publish images also to internal Gitlab repository. [\#30](https://github.com/openeuropa/triple-store-dev/pull/30) ([voidtek](https://github.com/voidtek))
