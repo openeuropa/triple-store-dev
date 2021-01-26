@@ -1,10 +1,18 @@
 # Change Log
 
+## [1.9.0](https://github.com/openeuropa/triple-store-dev/tree/1.9.0) (2021-01-26)
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.8.0...1.9.0)
+
+**Merged pull requests:**
+
+- EWPP-650: Use the AP-ACT file for human-sex. [\#38](https://github.com/openeuropa/triple-store-dev/pull/38) ([drishu](https://github.com/drishu))
+
 ## [1.8.0](https://github.com/openeuropa/triple-store-dev/tree/1.8.0) (2021-01-25)
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.7.0...1.8.0)
 
 **Merged pull requests:**
 
+- Prepare release 1.8.0. [\#37](https://github.com/openeuropa/triple-store-dev/pull/37) ([brummbar](https://github.com/brummbar))
 - EWPP-669: Update EU Programme OP vocabulary. [\#36](https://github.com/openeuropa/triple-store-dev/pull/36) ([brummbar](https://github.com/brummbar))
 - EWPP-650: Add human-sex to list. [\#35](https://github.com/openeuropa/triple-store-dev/pull/35) ([drishu](https://github.com/drishu))
 - FPFISSUPP-10363: Fix update gitlab img. [\#34](https://github.com/openeuropa/triple-store-dev/pull/34) ([voidtek](https://github.com/voidtek))
