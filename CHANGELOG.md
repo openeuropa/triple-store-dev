@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.10.0](https://github.com/openeuropa/triple-store-dev/tree/) (2021-02-22)
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.9.0...1.10.0)
+
+**Merged pull requests:**
+
+- EWPP-684: Add role vocabulary. [\#40](https://github.com/openeuropa/triple-store-dev/pull/40) ([drishu](https://github.com/drishu))
+
 ## [1.9.0](https://github.com/openeuropa/triple-store-dev/tree/1.9.0) (2021-01-26)
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.8.0...1.9.0)
 
