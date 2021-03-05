@@ -9,7 +9,7 @@ backend:
 data:
   - name: "corporate-body-classification"
     graph: "http://publications.europa.eu/resource/authority/corporate-body-classification"
-    url: "http://publications.europa.eu/resource/distribution/corporate-body-classification/20180926-0/rdf/skos_core/corporate-body-classification-skos.rdf"
+    url: "http://publications.europa.eu/resource/cellar/23e4ccf5-c0b9-11e8-9893-01aa75ed71a1.0001.01/DOC_1"
     format: "rdf"
 
   - name: "corporate-body"
@@ -36,7 +36,7 @@ data:
 
   - name: "eu-programme"
     graph: "http://publications.europa.eu/resource/authority/eu-programme"
-    url: "http://publications.europa.eu/resource/cellar/9ffbffce-574e-11eb-b59f-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/9ffbffce-574e-11eb-b59f-01aa75ed71a1.0001.02/DOC_1"
     format: "rdf"
 
   - name: "language"
@@ -46,7 +46,7 @@ data:
 
   - name: "organization-type"
     graph: "http://publications.europa.eu/resource/authority/organization-type"
-    url: "http://publications.europa.eu/resource/cellar/a8bcd901-17b8-11e8-ac73-01aa75ed71a1.0001.06/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/af196871-1c71-11e8-ac73-01aa75ed71a1.0001.01/DOC_1"
     format: "rdf"
 
   - name: "place"
@@ -66,7 +66,7 @@ data:
 
   - name: "target-audience"
     graph: "http://publications.europa.eu/resource/authority/target-audience"
-    url: "http://publications.europa.eu/resource/cellar/4cb35e04-75c5-11e7-b2f2-01aa75ed71a1.0001.08/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/47de8900-752b-11e8-9483-01aa75ed71a1.0001.02/DOC_1"
     format: "rdf"
 
   - name: "k4p-digital-thesaurus"
