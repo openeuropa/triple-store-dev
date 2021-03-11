@@ -1,20 +1,33 @@
-# Change Log
+# Changelog
 
-## [1.10.0](https://github.com/openeuropa/triple-store-dev/tree/) (2021-02-22)
+## [1.11.0](https://github.com/openeuropa/triple-store-dev/tree/1.11.0) (2021-03-11)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.10.0...1.11.0)
+
+**Merged pull requests:**
+
+- EWPP-817: Update vocabularies. [\#42](https://github.com/openeuropa/triple-store-dev/pull/42) ([sergepavle](https://github.com/sergepavle))
+
+## [1.10.0](https://github.com/openeuropa/triple-store-dev/tree/1.10.0) (2021-02-22)
+
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.9.0...1.10.0)
 
 **Merged pull requests:**
 
+- Update CHANGELOG.md for release 1.10.0. [\#41](https://github.com/openeuropa/triple-store-dev/pull/41) ([ademarco](https://github.com/ademarco))
 - EWPP-684: Add role vocabulary. [\#40](https://github.com/openeuropa/triple-store-dev/pull/40) ([drishu](https://github.com/drishu))
 
 ## [1.9.0](https://github.com/openeuropa/triple-store-dev/tree/1.9.0) (2021-01-26)
+
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.8.0...1.9.0)
 
 **Merged pull requests:**
 
+- Prepare changelog for release 1.9.0. [\#39](https://github.com/openeuropa/triple-store-dev/pull/39) ([brummbar](https://github.com/brummbar))
 - EWPP-650: Use the AP-ACT file for human-sex. [\#38](https://github.com/openeuropa/triple-store-dev/pull/38) ([drishu](https://github.com/drishu))
 
 ## [1.8.0](https://github.com/openeuropa/triple-store-dev/tree/1.8.0) (2021-01-25)
+
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.7.0...1.8.0)
 
 **Merged pull requests:**
@@ -25,6 +38,7 @@
 - FPFISSUPP-10363: Fix update gitlab img. [\#34](https://github.com/openeuropa/triple-store-dev/pull/34) ([voidtek](https://github.com/voidtek))
 
 ## [1.7.0](https://github.com/openeuropa/triple-store-dev/tree/1.7.0) (2021-01-06)
+
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.6.0...1.7.0)
 
 **Merged pull requests:**
