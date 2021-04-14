@@ -1,11 +1,20 @@
 # Changelog
 
+## [1.12.0](https://github.com/openeuropa/triple-store-dev/tree/1.12.0) (2021-04-14)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.11.0...1.12.0)
+
+**Merged pull requests:**
+
+- EWPP-979: Update EU programme vocab. [\#44](https://github.com/openeuropa/triple-store-dev/pull/44) ([nagyad](https://github.com/nagyad))
+
 ## [1.11.0](https://github.com/openeuropa/triple-store-dev/tree/1.11.0) (2021-03-11)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.10.0...1.11.0)
 
 **Merged pull requests:**
 
+- Release-1.11.0: Update changelog. [\#43](https://github.com/openeuropa/triple-store-dev/pull/43) ([nagyad](https://github.com/nagyad))
 - EWPP-817: Update vocabularies. [\#42](https://github.com/openeuropa/triple-store-dev/pull/42) ([sergepavle](https://github.com/sergepavle))
 
 ## [1.10.0](https://github.com/openeuropa/triple-store-dev/tree/1.10.0) (2021-02-22)
