@@ -88,3 +88,8 @@ data:
     graph: "http://publications.europa.eu/resource/dataset/role"
     url: "http://publications.europa.eu/resource/cellar/eb8f8730-3efa-11eb-b27b-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
+
+  - name: "role-qualifier"
+    graph: "http://publications.europa.eu/resource/dataset/role-qualifier"
+    url: "http://publications.europa.eu/resource/cellar/9d7e310b-8684-11eb-ac4c-01aa75ed71a1.0001.03/DOC_1"
+    format: "rdf"
