@@ -1,11 +1,21 @@
 # Changelog
 
+## [1.13.0](https://github.com/openeuropa/triple-store-dev/tree/1.13.0) (2021-04-16)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.12.0...1.13.0)
+
+**Merged pull requests:**
+
+- EWPP-1033: Update k4p list vocabulary. [\#47](https://github.com/openeuropa/triple-store-dev/pull/47) ([imanoleguskiza](https://github.com/imanoleguskiza))
+- EWPP-1030: Add role qualifier vocabulary. [\#46](https://github.com/openeuropa/triple-store-dev/pull/46) ([imanoleguskiza](https://github.com/imanoleguskiza))
+
 ## [1.12.0](https://github.com/openeuropa/triple-store-dev/tree/1.12.0) (2021-04-14)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.11.0...1.12.0)
 
 **Merged pull requests:**
 
+- Release-1.12.0: Update changelog. [\#45](https://github.com/openeuropa/triple-store-dev/pull/45) ([nagyad](https://github.com/nagyad))
 - EWPP-979: Update EU programme vocab. [\#44](https://github.com/openeuropa/triple-store-dev/pull/44) ([nagyad](https://github.com/nagyad))
 
 ## [1.11.0](https://github.com/openeuropa/triple-store-dev/tree/1.11.0) (2021-03-11)
