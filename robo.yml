@@ -14,17 +14,17 @@ data:
 
   - name: "corporate-body"
     graph: "http://publications.europa.eu/resource/authority/corporate-body"
-    url: "http://publications.europa.eu/resource/cellar/0fcd816f-7b92-11eb-9ac9-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/5a0e87c1-a1bb-11eb-b85c-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "country"
     graph: "http://publications.europa.eu/resource/authority/country"
-    url: "http://publications.europa.eu/resource/cellar/c737f05e-3efa-11eb-b27b-01aa75ed71a1.0001.04/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/a38af571-8684-11eb-ac4c-01aa75ed71a1.0001.04/DOC_1"
     format: "rdf"
 
   - name: "digital-europa-thesaurus"
     graph: "http://data.europa.eu/uxp"
-    url: "http://publications.europa.eu/resource/cellar/d99959d7-3f88-11eb-b27b-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/a9a06c66-8684-11eb-ac4c-01aa75ed71a1.0001.03/DOC_1"
     file: "DET-skos-core.rdf"
     format: "zip"
 
@@ -56,7 +56,7 @@ data:
 
   - name: "public-event-type"
     graph: "http://publications.europa.eu/resource/dataset/public-event-type"
-    url: "http://publications.europa.eu/resource/cellar/e8e4645a-3efa-11eb-b27b-01aa75ed71a1.0001.01/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/9d7afcb9-8684-11eb-ac4c-01aa75ed71a1.0001.01/DOC_1"
     format: "rdf"
 
   - name: "resource-type"
