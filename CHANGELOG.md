@@ -1,11 +1,18 @@
 # Changelog
 
-## [1.13.0](https://github.com/openeuropa/triple-store-dev/tree/1.13.0) (2021-04-16)
+## [1.14.0](https://github.com/openeuropa/triple-store-dev/tree/1.14.0) (2021-06-02)
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.13.0...1.14.0)
 
+**Merged pull requests:**
+
+- EWPP-1109: Update SKOS vocabularies. [\#49](https://github.com/openeuropa/triple-store-dev/pull/49) ([sergepavle](https://github.com/sergepavle))
+
+## [1.13.0](https://github.com/openeuropa/triple-store-dev/tree/1.13.0) (2021-04-16)
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.12.0...1.13.0)
 
 **Merged pull requests:**
 
+- Prepare release 1.13.0. [\#48](https://github.com/openeuropa/triple-store-dev/pull/48) ([imanoleguskiza](https://github.com/imanoleguskiza))
 - EWPP-1033: Update k4p list vocabulary. [\#47](https://github.com/openeuropa/triple-store-dev/pull/47) ([imanoleguskiza](https://github.com/imanoleguskiza))
 - EWPP-1030: Add role qualifier vocabulary. [\#46](https://github.com/openeuropa/triple-store-dev/pull/46) ([imanoleguskiza](https://github.com/imanoleguskiza))
 
