@@ -1,13 +1,24 @@
 # Changelog
 
+## [1.15.0](https://github.com/openeuropa/triple-store-dev/tree/1.15.0) (2021-06-25)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.14.0...1.15.0)
+
+**Merged pull requests:**
+
+- EWPP-1226: Update SKOS vocabularies according to release 20210616. [\#51](https://github.com/openeuropa/triple-store-dev/pull/51) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.14.0](https://github.com/openeuropa/triple-store-dev/tree/1.14.0) (2021-06-02)
+
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.13.0...1.14.0)
 
 **Merged pull requests:**
 
+- Prepare changelog for release 1.14.0. [\#50](https://github.com/openeuropa/triple-store-dev/pull/50) ([brummbar](https://github.com/brummbar))
 - EWPP-1109: Update SKOS vocabularies. [\#49](https://github.com/openeuropa/triple-store-dev/pull/49) ([sergepavle](https://github.com/sergepavle))
 
 ## [1.13.0](https://github.com/openeuropa/triple-store-dev/tree/1.13.0) (2021-04-16)
+
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.12.0...1.13.0)
 
 **Merged pull requests:**
