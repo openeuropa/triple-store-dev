@@ -22,7 +22,6 @@ The following RDF triples will be imported once the service starts:
 - [Public event type](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/public-event-type&version=20210317-0)
 - [Resource type](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/resource-type&version=20210616-0)
 - [Target audience](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/target-audience&version=20180620-0)
-- [Knowledge4Policy list](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/k4p-list&version=20210324-0)
 - [Sustainable Development Goals](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/sdg&version=20200930-0)
 - [Human sex](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/human-sex&version=20210616-0)
 - [Role](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/role&version=20201216-0)
