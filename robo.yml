@@ -88,3 +88,8 @@ data:
     graph: "http://publications.europa.eu/resource/dataset/role-qualifier"
     url: "http://publications.europa.eu/resource/cellar/b897302e-ce0b-11eb-ac72-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
+
+  - name: "strategic-priority"
+    graph: "http://publications.europa.eu/resource/authority/strategic-priority"
+    url: "http://publications.europa.eu/resource/cellar/ea0b97ae-20f4-11ec-bd8e-01aa75ed71a1.0001.01/DOC_1"
+    format: "rdf"
