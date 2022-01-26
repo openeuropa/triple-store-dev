@@ -26,6 +26,7 @@ The following RDF triples will be imported once the service starts:
 - [Human sex](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/human-sex&version=20210616-0)
 - [Role](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/role&version=20201216-0)
 - [Role qualifier](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/role-qualifier&version=20210616-0)
+- [Strategic priority](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/strategic-priority&version=20210929-0)
 
 New default content can be added to [`robo.yml`](./robo.yml) as shown below:
 
