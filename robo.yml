@@ -51,7 +51,7 @@ data:
 
   - name: "place"
     graph: "http://publications.europa.eu/resource/dataset/place"
-    url: "http://publications.europa.eu/resource/cellar/9d7afcb9-8684-11eb-ac4c-01aa75ed71a1.0001.01/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/87ec948c-581c-11ec-91ac-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "public-event-type"
