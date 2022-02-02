@@ -1,10 +1,20 @@
-# Change Log
+# Changelog
+
+## [1.18.0](https://github.com/openeuropa/triple-store-dev/tree/1.18.0) (2022-02-02)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.17.0...1.18.0)
+
+**Merged pull requests:**
+
+- EWPP-1930: Update vocabularies. [\#57](https://github.com/openeuropa/triple-store-dev/pull/57) ([nagyad](https://github.com/nagyad))
 
 ## [1.17.0](https://github.com/openeuropa/triple-store-dev/tree/1.17.0) (2022-01-26)
+
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.16.0...1.17.0)
 
 **Merged pull requests:**
 
+- EWPP-1905: Prepare changelog for release 1.17.0. [\#56](https://github.com/openeuropa/triple-store-dev/pull/56) ([22Alexandra](https://github.com/22Alexandra))
 - EWPP-1905: Adds Strategic priority vocabulary. [\#55](https://github.com/openeuropa/triple-store-dev/pull/55) ([22Alexandra](https://github.com/22Alexandra))
 
 ## [1.16.0](https://github.com/openeuropa/triple-store-dev/tree/1.16.0) (2021-12-14)
@@ -13,6 +23,7 @@
 
 **Merged pull requests:**
 
+- Prepare release 1.16.0. [\#54](https://github.com/openeuropa/triple-store-dev/pull/54) ([imanoleguskiza](https://github.com/imanoleguskiza))
 - EWPP-1794: Update corporate body to 20211210. [\#53](https://github.com/openeuropa/triple-store-dev/pull/53) ([nagyad](https://github.com/nagyad))
 
 ## [1.15.0](https://github.com/openeuropa/triple-store-dev/tree/1.15.0) (2021-06-25)
