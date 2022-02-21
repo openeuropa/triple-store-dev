@@ -27,6 +27,7 @@ The following RDF triples will be imported once the service starts:
 - [Role](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/role&version=20211208-0)
 - [Role qualifier](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/role-qualifier&version=20211208-0)
 - [Strategic priority](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/strategic-priority&version=20210929-0)
+- [European Commission web presence classes](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/com-web-presence&version=1.0)
 
 New default content can be added to [`robo.yml`](./robo.yml) as shown below:
 
