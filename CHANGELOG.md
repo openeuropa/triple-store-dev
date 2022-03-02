@@ -1,11 +1,20 @@
 # Changelog
 
+## [1.19.0](https://github.com/openeuropa/triple-store-dev/tree/1.19.0) (2022-03-02)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.18.0...1.19.0)
+
+**Merged pull requests:**
+
+- EWPP-1873: Add comm-web-presence vocabulary. [\#59](https://github.com/openeuropa/triple-store-dev/pull/59) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.18.0](https://github.com/openeuropa/triple-store-dev/tree/1.18.0) (2022-02-02)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.17.0...1.18.0)
 
 **Merged pull requests:**
 
+- Release-1.18.0: Update changelog. [\#58](https://github.com/openeuropa/triple-store-dev/pull/58) ([nagyad](https://github.com/nagyad))
 - EWPP-1930: Update vocabularies. [\#57](https://github.com/openeuropa/triple-store-dev/pull/57) ([nagyad](https://github.com/nagyad))
 
 ## [1.17.0](https://github.com/openeuropa/triple-store-dev/tree/1.17.0) (2022-01-26)
