@@ -93,3 +93,8 @@ data:
     graph: "http://publications.europa.eu/resource/authority/strategic-priority"
     url: "http://publications.europa.eu/resource/cellar/ea0b97ae-20f4-11ec-bd8e-01aa75ed71a1.0001.01/DOC_1"
     format: "rdf"
+
+  - name: "com-web-presence"
+    graph: "http://publications.europa.eu/resource/dataset/com-web-presence"
+    url: "http://publications.europa.eu/resource/cellar/81e32b86-581c-11ec-91ac-01aa75ed71a1.0001.01/DOC_1"
+    format: "rdf"
