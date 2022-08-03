@@ -103,3 +103,13 @@ data:
     graph: "http://publications.europa.eu/resource/dataset/political-leader"
     url: "http://publications.europa.eu/resource/cellar/9e0ffe30-3e74-11ed-92ed-01aa75ed71a1.0001.01/DOC_1"
     format: "rdf"
+
+  - name: "position-grade"
+    graph: "http://publications.europa.eu/resource/dataset/position-grade"
+    url: "http://publications.europa.eu/resource/cellar/d1171726-2070-11ec-bd8e-01aa75ed71a1.0001.02/DOC_1"
+    format: "rdf"
+
+  - name: "position-type"
+    graph: "http://publications.europa.eu/resource/dataset/position-type"
+    url: "http://publications.europa.eu/resource/cellar/ee803c24-2070-11ec-bd8e-01aa75ed71a1.0001.01/DOC_1"
+    format: "rdf"
