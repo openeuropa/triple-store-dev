@@ -86,6 +86,102 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
   }
 
   /**
+   * Update information about OP vocabularies with automatic updating URLs.
+   *
+   * @command update_version
+   */
+  public function updateVersions() {
+    $web_driver = \Facebook\WebDriver\Remote\RemoteWebDriver::create(
+      "http://selenium:4444/wd/hub",
+      [
+        "browserName" => "chrome",
+        "browserVersion" => "103.0",
+      ]
+    );
+    $current_voc_titles = [];
+    foreach ($this->config->get('data') as $datum) {
+      $current_voc_titles[] = $datum['title'];
+    }
+
+    try{
+      $parsedown = new Parsedown();
+      $parsed_readme = $parsedown->parse(file_get_contents('README.md'));
+      $raw_readme = file_get_contents('README.md');
+      $updated_readme = FALSE;
+      $crawler = new \Symfony\Component\DomCrawler\Crawler($parsed_readme);
+      $links_to_op_vocs = $crawler->filter('li>a');
+      /** @var \Facebook\WebDriver\WebDriverBy $webdriver_by */
+      $webdriver_by = \Facebook\WebDriver\WebDriverBy::class;
+      foreach ($links_to_op_vocs as $link) {
+        // Use only links to OP.
+        if (!in_array($link->textContent, $current_voc_titles)) {
+          continue;
+        }
+        $web_driver->get($link->getAttribute('href'));
+        sleep(10);
+
+        // Check if used link is latest.
+        $is_latest = (function ($web_driver) use ($webdriver_by) {
+          try {
+            return $web_driver->findElement($webdriver_by::cssSelector('div.eu-vocabularies-header .eu-vocabularies-latest-version'))->getText() === 'LATEST';
+          } catch (\Facebook\WebDriver\Exception\NoSuchElementException $e) {
+            return false;
+          }
+        })($web_driver);
+
+        if ($is_latest) {
+          continue;
+        }
+
+        // Find last version.
+        $latests_link = $web_driver->findElement($webdriver_by::cssSelector('div.tab-content .eu-vocabularies-latest-version'))->findElement($webdriver_by::xpath('../span/a'));
+        $latests_link->click();
+        sleep(10);
+        $title = str_replace(' ', '[[:space:]]', $link->textContent);
+        $regexp = '/^([[:space:]]\-[[:space:]]\[' . $title . '\])(\(.*\))$/m';
+        $raw_readme = preg_replace($regexp, '$1' . '(' . $web_driver->getCurrentURL() . ')',  $raw_readme);
+        $updated_readme = TRUE;
+
+        // Visit page with links to rdf files.
+        $web_driver->findElement($webdriver_by::linkText('Downloads'))->click();
+        sleep(10);
+        $rdf_link_url = $web_driver->findElement($webdriver_by::partialLinkText('-skos-ap-act.rdf'))->getAttribute('href');
+        parse_str(parse_url(urldecode($rdf_link_url))['query'], $query);
+        $rdf_urls_for_update[$link->textContent] = $query['cellarURI'];
+      }
+
+    }
+    catch(Exception $e){
+      echo 'Message: ' .$e->getMessage();
+    }
+    $web_driver->quit();
+    $web_driver->close();
+
+    // Update robo.yml file.
+    $rdf_data = $this->config->get('data');
+    $updated = FALSE;
+    foreach ($rdf_data as $index => $rdf_info) {
+      if (!empty($rdf_urls_for_update[$rdf_info['title']])) {
+        $updated = TRUE;
+        $rdf_data[$index]['url'] = $rdf_urls_for_update[$rdf_info['title']];
+      }
+    }
+    if ($updated) {
+      $this->config->set('data', $rdf_data);
+      $exported = $this->config->export();
+      unset($exported['command']);
+      unset($exported['options']);
+      $content = \Symfony\Component\Yaml\Yaml::dump($exported, 10);
+      file_put_contents('robo.yml', $content);
+    }
+    // Update README.md file.
+    if ($updated_readme) {
+      file_put_contents('README.md', $raw_readme);
+    }
+
+  }
+
+  /**
    * Run list of queries via isql-v.
    *
    * @param array $queries

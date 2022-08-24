@@ -7,7 +7,7 @@ COPY RoboFile.php RoboFile.php
 COPY robo.yml robo.yml
 COPY run.sh run.sh
 
-RUN composer --no-interaction install
+RUN composer --no-interaction --no-dev install
 
 FROM tenforce/virtuoso:1.3.1-virtuoso7.2.2
 

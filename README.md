@@ -38,6 +38,7 @@ New default content can be added to [`robo.yml`](./robo.yml) as shown below:
 ```
 data:
   - name: "corporate-body"
+    title: "Corporate body"
     graph: "http://publications.europa.eu/resource/authority/corporate-body"
     url: "http://publications.europa.eu/resource/cellar/07e1a665-2b56-11e7-9412-01aa75ed71a1.0001.10/DOC_1"
     format: "rdf"
@@ -49,6 +50,7 @@ containing the archived RDF file name as shown below:
 ```
 data:
   - name: "eurovoc-thesaurus"
+    title: "EuroVoc Thesaurus"
     graph: "http://publications.europa.eu/resource/dataset/eurovoc"
     url: "http://publications.europa.eu/resource/cellar/9f2bd600-ae7b-11e7-837e-01aa75ed71a1.0001.09/DOC_1"
     file: "eurovoc_in_skos_core_concepts.rdf"
@@ -72,6 +74,13 @@ docker run --name=triple-store-dev -p 8890:8890 openeuropa/triple-store-dev
 Visit the RDF storage at: http://localhost:8890
 
 ## Available commands
+
+Update information about vocabularies:
+
+```
+$ docker exec triple-store-dev ./vendor/bin/robo update_version
+```
+This command can be executed only after executed within this code base `docker-compose up` and `docker-compose exec web composer install`
 
 Fetch remote data:
 
