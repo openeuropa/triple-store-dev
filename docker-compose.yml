@@ -1,7 +1,7 @@
 version: '2'
 services:
   web:
-    image: fpfis/httpd-php-dev:7.4
+    image: fpfis/httpd-php-dev:8.0
     working_dir: /var/www/html
     ports:
       - 8080:8080
@@ -15,7 +15,7 @@ services:
       XDEBUG_MODE: "develop, debug"
       PHP_IDE_CONFIG: "serverName=Docker"
       # Enable step debugging for all PHP request. See ./README.md#step-debugging for more information.
-      XDEBUG_SESSION: 1
+      # XDEBUG_SESSION: 1
 
   # If you would like to see what is going on you can run the following on your host:
   # docker run --rm -p 4444:4444 -p 5900:5900 --network="host" selenium/standalone-chrome-debug:latest

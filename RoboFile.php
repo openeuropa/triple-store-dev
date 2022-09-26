@@ -88,6 +88,8 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
   /**
    * Update information about OP vocabularies with automatic updating URLs.
    *
+   * @TODO Refactor after accepting POC.
+   *
    * @command update_version
    */
   public function updateVersions() {
@@ -99,17 +101,19 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
       ]
     );
     $current_voc_titles = [];
+    $data_values = [];
     foreach ($this->config->get('data') as $datum) {
       $current_voc_titles[] = $datum['title'];
+      $data_values[$datum['title']] = $datum;
     }
 
-    try{
+    try {
       $parsedown = new Parsedown();
       $parsed_readme = $parsedown->parse(file_get_contents('README.md'));
       $raw_readme = file_get_contents('README.md');
       $updated_readme = FALSE;
       $crawler = new \Symfony\Component\DomCrawler\Crawler($parsed_readme);
-      $links_to_op_vocs = $crawler->filter('li>a');
+      $links_to_op_vocs = $crawler->filter('li > a');
       /** @var \Facebook\WebDriver\WebDriverBy $webdriver_by */
       $webdriver_by = \Facebook\WebDriver\WebDriverBy::class;
       foreach ($links_to_op_vocs as $link) {
@@ -117,6 +121,7 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
         if (!in_array($link->textContent, $current_voc_titles)) {
           continue;
         }
+        $data = $data_values[$link->textContent];
         $web_driver->get($link->getAttribute('href'));
         sleep(10);
 
@@ -133,19 +138,19 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
           continue;
         }
 
-        // Find last version.
+        // Find latest version.
         $latests_link = $web_driver->findElement($webdriver_by::cssSelector('div.tab-content .eu-vocabularies-latest-version'))->findElement($webdriver_by::xpath('../span/a'));
         $latests_link->click();
         sleep(10);
         $title = str_replace(' ', '[[:space:]]', $link->textContent);
-        $regexp = '/^([[:space:]]\-[[:space:]]\[' . $title . '\])(\(.*\))$/m';
+        $regexp = '/^(\-[[:space:]]\[' . $title . '\])(\(.*\))$/m';
         $raw_readme = preg_replace($regexp, '$1' . '(' . $web_driver->getCurrentURL() . ')',  $raw_readme);
         $updated_readme = TRUE;
 
         // Visit page with links to rdf files.
         $web_driver->findElement($webdriver_by::linkText('Downloads'))->click();
         sleep(10);
-        $rdf_link_url = $web_driver->findElement($webdriver_by::partialLinkText('-skos-ap-act.rdf'))->getAttribute('href');
+        $rdf_link_url = $web_driver->findElement($webdriver_by::partialLinkText($data['partial_link_text']))->getAttribute('href');
         parse_str(parse_url(urldecode($rdf_link_url))['query'], $query);
         $rdf_urls_for_update[$link->textContent] = $query['cellarURI'];
       }

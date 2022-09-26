@@ -78,9 +78,9 @@ Visit the RDF storage at: http://localhost:8890
 Update information about vocabularies:
 
 ```
-$ docker exec triple-store-dev ./vendor/bin/robo update_version
+$ docker-compose exec web vendor/bin/robo update_version
 ```
-This command can be executed only after executed within this code base `docker-compose up` and `docker-compose exec web composer install`
+This command can be executed only after execution within this code base `docker-compose up -d` and `docker-compose exec web composer update --dev`
 
 Fetch remote data:
 
@@ -123,6 +123,26 @@ DBA_PASSWORD
 ```
 
 Default values set via environment variables will override values set in `robo.yml`.
+
+## Update vocabularies version in source code
+
+Currently, information regarding the latest version of vocabularies can be discovered on `https://op.europa.eu/en/home` site.
+For automatic update of source code you can do by following steps:
+
+1. Download and start the supplied Docker images:
+```
+$ docker-compose up -d
+```
+2. Run composer install:
+```
+$ docker-compose exec web composer update --dev
+```
+3. Run automatic update information about vocabularies with using crawler:
+```
+$ docker-compose exec web vendor/bin/robo update_version
+```
+4. Test built image in your application.
+5. Commit changed files except for `composer.lock` file.
 
 ## Working with Docker Compose
 
