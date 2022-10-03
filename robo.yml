@@ -9,22 +9,22 @@ backend:
 data:
   - name: "corporate-body-classification"
     graph: "http://publications.europa.eu/resource/authority/corporate-body-classification"
-    url: "http://publications.europa.eu/resource/cellar/9619bd59-f70c-11ec-b94a-01aa75ed71a1.0001.01/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/76a55b0c-3e74-11ed-92ed-01aa75ed71a1.0001.01/DOC_1"
     format: "rdf"
 
   - name: "corporate-body"
     graph: "http://publications.europa.eu/resource/authority/corporate-body"
-    url: "http://publications.europa.eu/resource/cellar/a4b6959a-f70c-11ec-b94a-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/56a892e7-3e74-11ed-92ed-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "country"
     graph: "http://publications.europa.eu/resource/authority/country"
-    url: "http://publications.europa.eu/resource/cellar/6451e772-f70c-11ec-b94a-01aa75ed71a1.0001.04/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/298fa9bf-3e75-11ed-92ed-01aa75ed71a1.0001.04/DOC_1"
     format: "rdf"
 
   - name: "digital-europa-thesaurus"
     graph: "http://data.europa.eu/uxp"
-    url: "http://publications.europa.eu/resource/cellar/8335da20-ed4a-11ec-a534-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/394a3c8a-3f0b-11ed-92ed-01aa75ed71a1.0001.03/DOC_1"
     file: "DET-skos-core.rdf"
     format: "zip"
 
@@ -36,12 +36,12 @@ data:
 
   - name: "eu-programme"
     graph: "http://publications.europa.eu/resource/authority/eu-programme"
-    url: "http://publications.europa.eu/resource/cellar/c8c0ceb1-f70c-11ec-b94a-01aa75ed71a1.0001.02/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/d1f90669-3e74-11ed-92ed-01aa75ed71a1.0001.02/DOC_1"
     format: "rdf"
 
   - name: "language"
     graph: "http://publications.europa.eu/resource/authority/language"
-    url: "http://publications.europa.eu/resource/cellar/d4ba7363-f70c-11ec-b94a-01aa75ed71a1.0001.04/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/50122c26-3e74-11ed-92ed-01aa75ed71a1.0001.04/DOC_1"
     format: "rdf"
 
   - name: "organization-type"
@@ -51,7 +51,7 @@ data:
 
   - name: "place"
     graph: "http://publications.europa.eu/resource/dataset/place"
-    url: "http://publications.europa.eu/resource/cellar/8d0a1938-f70c-11ec-b94a-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/4e4e66c5-3e75-11ed-92ed-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "public-event-type"
@@ -61,12 +61,12 @@ data:
 
   - name: "resource-type"
     graph: "http://publications.europa.eu/resource/authority/resource-type"
-    url: "http://publications.europa.eu/resource/cellar/b258ba2c-f70c-11ec-b94a-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/523a1fe6-3e75-11ed-92ed-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "target-audience"
     graph: "http://publications.europa.eu/resource/authority/target-audience"
-    url: "http://publications.europa.eu/resource/cellar/efe194a2-20f4-11ec-bd8e-01aa75ed71a1.0001.02/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/44de2164-3e74-11ed-92ed-01aa75ed71a1.0001.02/DOC_1"
     format: "rdf"
 
   - name: "SDG"
@@ -81,7 +81,7 @@ data:
 
   - name: "role"
     graph: "http://publications.europa.eu/resource/dataset/role"
-    url: "http://publications.europa.eu/resource/cellar/99179de0-f787-11ec-b94a-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/668cdf49-3e74-11ed-92ed-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "role-qualifier"
