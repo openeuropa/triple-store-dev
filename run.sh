@@ -11,7 +11,7 @@ sed -i 's/exec virtuoso-t +wait +foreground//g' /virtuoso.sh
 if [ ! -f ".data_imported" ] ;
 then
     echo "Starting Virtuoso in background..."
-    exec virtuoso-t +configfile /virtuoso.ini +wait +foreground &
+    exec virtuoso-t +wait +foreground &
 
     echo "Waiting for Virtuoso to be ready on 1111..."
     while ! nc -z localhost 1111; do
@@ -27,6 +27,6 @@ then
     fg %1
 else
   echo "Start Virtuoso in foreground as data was already imported."
-  exec virtuoso-t +configfile /virtuoso.ini +wait +foreground
+  exec virtuoso-t +wait +foreground
 fi
 
