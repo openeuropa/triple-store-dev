@@ -4,6 +4,17 @@ set -m
 # Prevent running Virtuoso in Docker parent image, will do after importing default data.
 sed -i 's/exec virtuoso-t +wait +foreground//g' /virtuoso.sh
 
+# Make sure the Virtuoso ini file exists.
+if [ ! -f ./virtuoso.ini ];
+then
+  mv /virtuoso.ini . 2>/dev/null
+fi
+
+# Set some defaults before invoking the Virtuoso setup.
+# These values can be still overridden via environment variables as allowed by the Virtuoso image.
+# @see https://hub.docker.com/r/tenforce/virtuoso ".ini configuration"
+crudini --set virtuoso.ini SPARQL ResultSetMaxRows "100000"
+
 # Setup Virtuoso.
 /bin/bash /virtuoso.sh
 
