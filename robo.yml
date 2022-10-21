@@ -14,12 +14,12 @@ data:
 
   - name: "corporate-body"
     graph: "http://publications.europa.eu/resource/authority/corporate-body"
-    url: "http://publications.europa.eu/resource/cellar/56a892e7-3e74-11ed-92ed-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/5834a853-508d-11ed-92ed-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "country"
     graph: "http://publications.europa.eu/resource/authority/country"
-    url: "http://publications.europa.eu/resource/cellar/298fa9bf-3e75-11ed-92ed-01aa75ed71a1.0001.04/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/56b02b32-508d-11ed-92ed-01aa75ed71a1.0001.04/DOC_1"
     format: "rdf"
 
   - name: "digital-europa-thesaurus"
@@ -86,7 +86,7 @@ data:
 
   - name: "role-qualifier"
     graph: "http://publications.europa.eu/resource/dataset/role-qualifier"
-    url: "http://publications.europa.eu/resource/cellar/ec32e7b9-f933-11ec-b94a-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/54d9e491-508d-11ed-92ed-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "strategic-priority"
