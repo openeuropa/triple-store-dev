@@ -1,11 +1,20 @@
 # Changelog
 
+## [1.23.0](https://github.com/openeuropa/triple-store-dev/tree/1.23.0) (2022-10-24)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.22.0...1.23.0)
+
+**Merged pull requests:**
+
+- EWPP-2721: Update vocabularies. [\#70](https://github.com/openeuropa/triple-store-dev/pull/70) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.22.0](https://github.com/openeuropa/triple-store-dev/tree/1.22.0) (2022-10-20)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.21.0...1.22.0)
 
 **Merged pull requests:**
 
+- Update CHANGELOG.md for release 1.22.0. [\#69](https://github.com/openeuropa/triple-store-dev/pull/69) ([yenyasinn](https://github.com/yenyasinn))
 - EWPP-2717: Ini file is being ignored during build. [\#68](https://github.com/openeuropa/triple-store-dev/pull/68) ([brummbar](https://github.com/brummbar))
 
 ## [1.21.0](https://github.com/openeuropa/triple-store-dev/tree/1.21.0) (2022-10-12)
