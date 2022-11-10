@@ -1,11 +1,20 @@
 # Changelog
 
+## [1.24.0](https://github.com/openeuropa/triple-store-dev/tree/1.24.0) (2022-11-10)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.23.0...1.24.0)
+
+**Merged pull requests:**
+
+- EWPP-2569: Add EU political leader name vocabulary. [\#72](https://github.com/openeuropa/triple-store-dev/pull/72) ([yenyasinn](https://github.com/yenyasinn))
+
 ## [1.23.0](https://github.com/openeuropa/triple-store-dev/tree/1.23.0) (2022-10-24)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.22.0...1.23.0)
 
 **Merged pull requests:**
 
+- Update CHANGELOG.md for release 1.23.0. [\#71](https://github.com/openeuropa/triple-store-dev/pull/71) ([sergepavle](https://github.com/sergepavle))
 - EWPP-2721: Update vocabularies. [\#70](https://github.com/openeuropa/triple-store-dev/pull/70) ([sergepavle](https://github.com/sergepavle))
 
 ## [1.22.0](https://github.com/openeuropa/triple-store-dev/tree/1.22.0) (2022-10-20)
