@@ -31,6 +31,7 @@ The following RDF triples will be imported once the service starts:
 - [EU political leader name](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/political-leader&version=20220928-0)
 - [Position grade](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/position-grade&version=20210929-0)
 - [Position type](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/position-type&version=20210929-0)
+- [Procurement procedure type](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/procurement-procedure-type&version=20220928-0)
 
 New default content can be added to [`robo.yml`](./robo.yml) as shown below:
 
