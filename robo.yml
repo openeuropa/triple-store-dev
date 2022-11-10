@@ -98,3 +98,8 @@ data:
     graph: "http://publications.europa.eu/resource/dataset/com-web-presence"
     url: "http://publications.europa.eu/resource/cellar/82ebffdf-ed4a-11ec-a534-01aa75ed71a1.0001.01/DOC_1"
     format: "rdf"
+
+  - name: "political-leader"
+    graph: "http://publications.europa.eu/resource/dataset/political-leader"
+    url: "http://publications.europa.eu/resource/cellar/9e0ffe30-3e74-11ed-92ed-01aa75ed71a1.0001.01/DOC_1"
+    format: "rdf"
