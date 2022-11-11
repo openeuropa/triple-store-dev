@@ -116,5 +116,5 @@ data:
 
   - name: "procurement-procedure-type"
     graph: "http://publications.europa.eu/resource/dataset/procurement-procedure-type"
-    url: "http://publications.europa.eu/resource/cellar/356ca7f5-d899-11e9-9c4e-01aa75ed71a1.0001.01/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/302e26d0-3e75-11ed-92ed-01aa75ed71a1.0001.02/DOC_1"
     format: "rdf"
