@@ -1,11 +1,19 @@
 # Changelog
 
-## [1.24.0](https://github.com/openeuropa/triple-store-dev/tree/1.24.0) (2022-11-10)
+## [1.25.0](https://github.com/openeuropa/triple-store-dev/tree/1.25.0) (2022-11-11)
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.24.0...1.25.0)
 
+**Merged pull requests:**
+
+- ERATRANS-112: Add procurement procedure type vocabulary. [\#75](https://github.com/openeuropa/triple-store-dev/pull/75) ([Maxfire](https://github.com/Maxfire))
+- CBEJU-313: Add position type and position grade vocabulary. [\#74](https://github.com/openeuropa/triple-store-dev/pull/74) ([Maxfire](https://github.com/Maxfire))
+
+## [1.24.0](https://github.com/openeuropa/triple-store-dev/tree/1.24.0) (2022-11-10)
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.23.0...1.24.0)
 
 **Merged pull requests:**
 
+- Update CHANGELOG.md for release 1.24.0. [\#73](https://github.com/openeuropa/triple-store-dev/pull/73) ([sergepavle](https://github.com/sergepavle))
 - EWPP-2569: Add EU political leader name vocabulary. [\#72](https://github.com/openeuropa/triple-store-dev/pull/72) ([yenyasinn](https://github.com/yenyasinn))
 
 ## [1.23.0](https://github.com/openeuropa/triple-store-dev/tree/1.23.0) (2022-10-24)
