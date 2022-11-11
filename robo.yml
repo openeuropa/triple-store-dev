@@ -106,7 +106,7 @@ data:
 
   - name: "position-grade"
     graph: "http://publications.europa.eu/resource/dataset/position-grade"
-    url: "http://publications.europa.eu/resource/cellar/d1171726-2070-11ec-bd8e-01aa75ed71a1.0001.02/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/d1171726-2070-11ec-bd8e-01aa75ed71a1.0001.01/DOC_1"
     format: "rdf"
 
   - name: "position-type"
