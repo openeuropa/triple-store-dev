@@ -1,14 +1,25 @@
 # Changelog
 
+## [1.26.0](https://github.com/openeuropa/triple-store-dev/tree/1.26.0) (2023-01-09)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.25.0...1.26.0)
+
+**Merged pull requests:**
+
+- EWPP-2927: Update all OP vocabularies to their latest version. [\#77](https://github.com/openeuropa/triple-store-dev/pull/77) ([yenyasinn](https://github.com/yenyasinn))
+
 ## [1.25.0](https://github.com/openeuropa/triple-store-dev/tree/1.25.0) (2022-11-11)
+
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.24.0...1.25.0)
 
 **Merged pull requests:**
 
+- Prepare changelog for release 1.25.0. [\#76](https://github.com/openeuropa/triple-store-dev/pull/76) ([brummbar](https://github.com/brummbar))
 - ERATRANS-112: Add procurement procedure type vocabulary. [\#75](https://github.com/openeuropa/triple-store-dev/pull/75) ([Maxfire](https://github.com/Maxfire))
 - CBEJU-313: Add position type and position grade vocabulary. [\#74](https://github.com/openeuropa/triple-store-dev/pull/74) ([Maxfire](https://github.com/Maxfire))
 
 ## [1.24.0](https://github.com/openeuropa/triple-store-dev/tree/1.24.0) (2022-11-10)
+
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.23.0...1.24.0)
 
 **Merged pull requests:**
