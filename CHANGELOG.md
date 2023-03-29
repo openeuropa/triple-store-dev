@@ -1,11 +1,20 @@
 # Changelog
 
+## [1.27.0](https://github.com/openeuropa/triple-store-dev/tree/1.27.0) (2023-03-29)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.26.0...1.27.0)
+
+**Merged pull requests:**
+
+- EWPP-3188: Update triple store vocabularies. [\#80](https://github.com/openeuropa/triple-store-dev/pull/80) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.26.0](https://github.com/openeuropa/triple-store-dev/tree/1.26.0) (2023-01-09)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.25.0...1.26.0)
 
 **Merged pull requests:**
 
+- Prepare changelog for release 1.26.0. [\#78](https://github.com/openeuropa/triple-store-dev/pull/78) ([sergepavle](https://github.com/sergepavle))
 - EWPP-2927: Update all OP vocabularies to their latest version. [\#77](https://github.com/openeuropa/triple-store-dev/pull/77) ([yenyasinn](https://github.com/yenyasinn))
 
 ## [1.25.0](https://github.com/openeuropa/triple-store-dev/tree/1.25.0) (2022-11-11)
