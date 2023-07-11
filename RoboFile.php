@@ -122,26 +122,24 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
           continue;
         }
         $data = $data_values[$link->textContent];
-        $web_driver->get($link->getAttribute('href'));
-        sleep(10);
+        $url = $link->getAttribute('href');
+        echo "Updating vocabulary " . $url . "\n";
+        $web_driver->get($url);
+        sleep(2);
 
-        // Check if used link is latest.
-        $is_latest = (function ($web_driver) use ($webdriver_by) {
-          try {
-            return $web_driver->findElement($webdriver_by::cssSelector('div.eu-vocabularies-header .eu-vocabularies-latest-version'))->getText() === 'LATEST';
-          } catch (\Facebook\WebDriver\Exception\NoSuchElementException $e) {
-            return false;
-          }
-        })($web_driver);
-
-        if ($is_latest) {
+        // Assert we are not in the latest version.
+        $dropdown_button = $web_driver->findElements($webdriver_by::cssSelector('.eu-vocabularies-latest-version'));
+        // If the "LATEST" label is shown twice we know we are in the latest version.
+        if (count($dropdown_button) > 1) {
+          echo "Vocabulary is already in its latest version. \n";
           continue;
         }
-
         // Find latest version.
-        $latests_link = $web_driver->findElement($webdriver_by::cssSelector('div.tab-content .eu-vocabularies-latest-version'))->findElement($webdriver_by::xpath('../span/a'));
-        $latests_link->click();
-        sleep(10);
+        $dropdown_button = $web_driver->findElement($webdriver_by::cssSelector('button.dropdown-toggle'));
+        $dropdown_button->click();
+        $latest_link = $web_driver->findElement($webdriver_by::cssSelector('div.dropdown-menu span:first-child a'));
+        $latest_link->click();
+        sleep(2);
         $title = str_replace(' ', '[[:space:]]', $link->textContent);
         $regexp = '/^(\-[[:space:]]\[' . $title . '\])(\(.*\))$/m';
         $raw_readme = preg_replace($regexp, '$1' . '(' . $web_driver->getCurrentURL() . ')',  $raw_readme);
@@ -149,10 +147,12 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
 
         // Visit page with links to rdf files.
         $web_driver->findElement($webdriver_by::linkText('Downloads'))->click();
-        sleep(10);
+        sleep(2);
         $rdf_link_url = $web_driver->findElement($webdriver_by::partialLinkText($data['partial_link_text']))->getAttribute('href');
         parse_str(parse_url(urldecode($rdf_link_url))['query'], $query);
         $rdf_urls_for_update[$link->textContent] = $query['cellarURI'];
+        echo "Vocabulary updated to " . $query['cellarURI'] . ". \n";
+        echo "===================================================\n";
       }
 
     }
