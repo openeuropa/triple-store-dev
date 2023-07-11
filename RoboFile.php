@@ -86,6 +86,107 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
   }
 
   /**
+   * Update information about OP vocabularies with automatic updating URLs.
+   *
+   * @TODO Refactor after accepting POC.
+   *
+   * @command update_version
+   */
+  public function updateVersions() {
+    $web_driver = \Facebook\WebDriver\Remote\RemoteWebDriver::create(
+      "http://selenium:4444/wd/hub",
+      [
+        "browserName" => "chrome",
+        "browserVersion" => "103.0",
+      ]
+    );
+    $current_voc_titles = [];
+    $data_values = [];
+    foreach ($this->config->get('data') as $datum) {
+      $current_voc_titles[] = $datum['title'];
+      $data_values[$datum['title']] = $datum;
+    }
+
+    try {
+      $parsedown = new Parsedown();
+      $parsed_readme = $parsedown->parse(file_get_contents('README.md'));
+      $raw_readme = file_get_contents('README.md');
+      $updated_readme = FALSE;
+      $crawler = new \Symfony\Component\DomCrawler\Crawler($parsed_readme);
+      $links_to_op_vocs = $crawler->filter('li > a');
+      /** @var \Facebook\WebDriver\WebDriverBy $webdriver_by */
+      $webdriver_by = \Facebook\WebDriver\WebDriverBy::class;
+      foreach ($links_to_op_vocs as $link) {
+        // Use only links to OP.
+        if (!in_array($link->textContent, $current_voc_titles)) {
+          continue;
+        }
+        $data = $data_values[$link->textContent];
+        $url = $link->getAttribute('href');
+        echo "Updating vocabulary " . $url . "\n";
+        $web_driver->get($url);
+        sleep(2);
+
+        // Assert we are not in the latest version.
+        $dropdown_button = $web_driver->findElements($webdriver_by::cssSelector('.eu-vocabularies-latest-version'));
+        // If the "LATEST" label is shown twice we know we are in the latest version.
+        if (count($dropdown_button) > 1) {
+          echo "Vocabulary is already in its latest version. \n";
+          continue;
+        }
+        // Find latest version.
+        $dropdown_button = $web_driver->findElement($webdriver_by::cssSelector('button.dropdown-toggle'));
+        $dropdown_button->click();
+        $latest_link = $web_driver->findElement($webdriver_by::cssSelector('div.dropdown-menu span:first-child a'));
+        $latest_link->click();
+        sleep(2);
+        $title = str_replace(' ', '[[:space:]]', $link->textContent);
+        $regexp = '/^(\-[[:space:]]\[' . $title . '\])(\(.*\))$/m';
+        $raw_readme = preg_replace($regexp, '$1' . '(' . $web_driver->getCurrentURL() . ')',  $raw_readme);
+        $updated_readme = TRUE;
+
+        // Visit page with links to rdf files.
+        $web_driver->findElement($webdriver_by::linkText('Downloads'))->click();
+        sleep(2);
+        $rdf_link_url = $web_driver->findElement($webdriver_by::partialLinkText($data['partial_link_text']))->getAttribute('href');
+        parse_str(parse_url(urldecode($rdf_link_url))['query'], $query);
+        $rdf_urls_for_update[$link->textContent] = $query['cellarURI'];
+        echo "Vocabulary updated to " . $query['cellarURI'] . ". \n";
+        echo "===================================================\n";
+      }
+
+    }
+    catch(Exception $e){
+      echo 'Message: ' .$e->getMessage();
+    }
+    $web_driver->quit();
+    $web_driver->close();
+
+    // Update robo.yml file.
+    $rdf_data = $this->config->get('data');
+    $updated = FALSE;
+    foreach ($rdf_data as $index => $rdf_info) {
+      if (!empty($rdf_urls_for_update[$rdf_info['title']])) {
+        $updated = TRUE;
+        $rdf_data[$index]['url'] = $rdf_urls_for_update[$rdf_info['title']];
+      }
+    }
+    if ($updated) {
+      $this->config->set('data', $rdf_data);
+      $exported = $this->config->export();
+      unset($exported['command']);
+      unset($exported['options']);
+      $content = \Symfony\Component\Yaml\Yaml::dump($exported, 10);
+      file_put_contents('robo.yml', $content);
+    }
+    // Update README.md file.
+    if ($updated_readme) {
+      file_put_contents('README.md', $raw_readme);
+    }
+
+  }
+
+  /**
    * Run list of queries via isql-v.
    *
    * @param array $queries

@@ -8,10 +8,16 @@
     "require": {
         "consolidation/robo": "^1.0"
     },
+    "require-dev": {
+        "erusev/parsedown": "^1.7",
+        "php-webdriver/webdriver": "^1.12",
+        "symfony/css-selector": "^4.4",
+        "symfony/dom-crawler": "^4.4"
+    },
     "config": {
         "sort-packages": true,
         "platform": {
-            "php": "7.0"
+            "php": "8.0"
         }
     },
     "scripts": {

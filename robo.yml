@@ -1,120 +1,162 @@
-import_dir: "./import"
-
+import_dir: ./import
 backend:
-  host: "localhost"
-  port: 1111
-  username: "dba"
-  password: "dba"
-
+    host: localhost
+    port: 1111
+    username: dba
+    password: dba
 data:
   - name: "corporate-body-classification"
+    title: 'Corporate body classification'
     graph: "http://publications.europa.eu/resource/authority/corporate-body-classification"
     url: "http://publications.europa.eu/resource/cellar/0cea6119-7afb-11ed-9887-01aa75ed71a1.0001.01/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "corporate-body"
+    title: 'Corporate body'
     graph: "http://publications.europa.eu/resource/authority/corporate-body"
     url: "http://publications.europa.eu/resource/cellar/768f84c2-c33a-11ed-a05c-01aa75ed71a1.0001.03/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "country"
+    title: Country
     graph: "http://publications.europa.eu/resource/authority/country"
     url: "http://publications.europa.eu/resource/cellar/03e37078-c33a-11ed-a05c-01aa75ed71a1.0001.04/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "digital-europa-thesaurus"
+    title: 'Digital Europa Thesaurus'
     graph: "http://data.europa.eu/uxp"
     url: "http://publications.europa.eu/resource/cellar/cab55ff7-c344-11ed-a05c-01aa75ed71a1.0001.03/DOC_1"
+    partial_link_text: DET-skos-core.zip
     file: "DET-skos-core.rdf"
     format: "zip"
 
   - name: "eurovoc-thesaurus"
+    title: 'EuroVoc Thesaurus'
     graph: "http://publications.europa.eu/resource/dataset/eurovoc"
     url: "http://publications.europa.eu/resource/cellar/fb5bc6f8-a143-11ed-b508-01aa75ed71a1.0001.04/DOC_1"
+    partial_link_text: skos_core_concepts.zip
     file: "eurovoc_in_skos_core_concepts.rdf"
     format: "zip"
 
   - name: "eu-programme"
+    title: 'EU Programme'
     graph: "http://publications.europa.eu/resource/authority/eu-programme"
     url: "http://publications.europa.eu/resource/cellar/3911069d-c33a-11ed-a05c-01aa75ed71a1.0001.02/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "language"
+    title: Language
     graph: "http://publications.europa.eu/resource/authority/language"
     url: "http://publications.europa.eu/resource/cellar/50122c26-3e74-11ed-92ed-01aa75ed71a1.0001.04/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "organization-type"
+    title: 'Organization type'
     graph: "http://publications.europa.eu/resource/authority/organization-type"
     url: "http://publications.europa.eu/resource/cellar/0b551b18-7afb-11ed-9887-01aa75ed71a1.0001.01/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "place"
+    title: Place
     graph: "http://publications.europa.eu/resource/dataset/place"
     url: "http://publications.europa.eu/resource/cellar/4e2069ef-c33a-11ed-a05c-01aa75ed71a1.0001.03/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "public-event-type"
+    title: 'Public event type'
     graph: "http://publications.europa.eu/resource/dataset/public-event-type"
     url: "http://publications.europa.eu/resource/cellar/03e62ea4-7afb-11ed-9887-01aa75ed71a1.0001.01/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "resource-type"
+    title: 'Resource type'
     graph: "http://publications.europa.eu/resource/authority/resource-type"
     url: "http://publications.europa.eu/resource/cellar/43b861be-c33a-11ed-a05c-01aa75ed71a1.0001.03/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "target-audience"
+    title: 'Target audience'
     graph: "http://publications.europa.eu/resource/authority/target-audience"
     url: "http://publications.europa.eu/resource/cellar/44de2164-3e74-11ed-92ed-01aa75ed71a1.0001.02/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "SDG"
+    title: 'Sustainable Development Goals'
     graph: "http://publications.europa.eu/resource/dataset/sdg"
     url: "http://publications.europa.eu/resource/cellar/5ea37239-0495-11eb-a511-01aa75ed71a1.0001.01/DOC_1"
+    partial_link_text: sdg-skos-ap-eu.rdf
     format: "rdf"
 
   - name: "human-sex"
+    title: 'Human sex'
     graph: "http://publications.europa.eu/resource/dataset/human-sex"
     url: "http://publications.europa.eu/resource/cellar/ea0ea4ef-20f4-11ec-bd8e-01aa75ed71a1.0001.01/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "role"
+    title: Role
     graph: "http://publications.europa.eu/resource/dataset/role"
     url: "http://publications.europa.eu/resource/cellar/e4bce414-c339-11ed-a05c-01aa75ed71a1.0001.03/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "role-qualifier"
+    title: 'Role qualifier'
     graph: "http://publications.europa.eu/resource/dataset/role-qualifier"
     url: "http://publications.europa.eu/resource/cellar/54d9e491-508d-11ed-92ed-01aa75ed71a1.0001.03/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "strategic-priority"
+    title: 'Strategic priority'
     graph: "http://publications.europa.eu/resource/authority/strategic-priority"
     url: "http://publications.europa.eu/resource/cellar/167ca2bd-7afb-11ed-9887-01aa75ed71a1.0001.01/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "com-web-presence"
+    title: 'European Commission web presence classes'
     graph: "http://publications.europa.eu/resource/dataset/com-web-presence"
     url: "http://publications.europa.eu/resource/cellar/f0223ac5-7b92-11ed-9887-01aa75ed71a1.0001.01/DOC_1"
+    partial_link_text: comm-web-presence-skos-ap-eu.rdf
     format: "rdf"
 
   - name: "political-leader"
+    title: 'EU political leader name'
     graph: "http://publications.europa.eu/resource/dataset/political-leader"
     url: "http://publications.europa.eu/resource/cellar/18e42cdf-7afb-11ed-9887-01aa75ed71a1.0001.01/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "position-grade"
+    title: 'Position grade'
     graph: "http://publications.europa.eu/resource/dataset/position-grade"
     url: "http://publications.europa.eu/resource/cellar/d1171726-2070-11ec-bd8e-01aa75ed71a1.0001.01/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "position-type"
+    title: 'Position type'
     graph: "http://publications.europa.eu/resource/dataset/position-type"
     url: "http://publications.europa.eu/resource/cellar/ee803c24-2070-11ec-bd8e-01aa75ed71a1.0001.01/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"
 
   - name: "procurement-procedure-type"
+    title: 'Procurement procedure type'
     graph: "http://publications.europa.eu/resource/dataset/procurement-procedure-type"
     url: "http://publications.europa.eu/resource/cellar/302e26d0-3e75-11ed-92ed-01aa75ed71a1.0001.02/DOC_1"
+    partial_link_text: '-skos-ap-act.rdf'
     format: "rdf"

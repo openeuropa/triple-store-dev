@@ -1,0 +1,38 @@
+version: '2'
+services:
+  web:
+    image: fpfis/httpd-php-dev:8.1
+    working_dir: /var/www/html
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/var/www/html # Non Mac users.
+      # - nfsmount:/var/www/html # Mac Users with the nfsmount volume.
+    environment:
+      COMPOSERVER: "--2"
+      XDEBUG_CONFIG: "client_host=172.17.0.1" # Non-Mac users.
+      # XDEBUG_CONFIG: "client_host=host.docker.internal" # Mac users.
+      XDEBUG_MODE: "develop, debug"
+      PHP_IDE_CONFIG: "serverName=Docker"
+      # Enable step debugging for all PHP request. See ./README.md#step-debugging for more information.
+      # XDEBUG_SESSION: 1
+
+  # If you would like to see what is going on you can run the following on your host:
+  # docker run --rm -p 4444:4444 -p 5900:5900 --network="host" selenium/standalone-chrome-debug:latest
+  # Newer version of this image might run into this issue:
+  # @link https://github.com/elgalu/docker-selenium/issues/20
+  selenium:
+    image: selenium/standalone-chrome-debug:3.141.5
+    expose:
+    - '4444'
+    environment:
+    - DISPLAY=:99
+    - SCREEN_WIDTH=1440
+    - SCREEN_HEIGHT=900
+    - VNC_NO_PASSWORD=1
+    ports:
+    - '4444:4444'
+    - "5900:5900"
+    volumes:
+    - /dev/shm:/dev/shm
+    shm_size: 2g
