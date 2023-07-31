@@ -10,20 +10,14 @@ clone:
     when:
       event: [ push, tag ]
 
-services:
-  docker:
-    image: registry.fpfis.eu/fpfis/docker:18-dind
-    privileged: true
-
 pipeline:
 
   # Test image build.
   build:
     image: registry.fpfis.eu/fpfis/docker:18-dind
-    environment:
-      - DOCKER_HOST=tcp://docker:2375
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
     commands:
-      - sleep 10
       - docker ps
       - docker build -t openeuropa/triple-store-dev .
 
