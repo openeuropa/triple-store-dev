@@ -1,11 +1,21 @@
 # Changelog
 
+## [1.28.0](https://github.com/openeuropa/triple-store-dev/tree/1.28.0) (2023-08-08)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.27.0...1.28.0)
+
+**Merged pull requests:**
+
+- DROPSEC-6425: change build method [\#84](https://github.com/openeuropa/triple-store-dev/pull/84) ([gervasek](https://github.com/gervasek))
+- EWPP-3465: Update vocabularies. [\#83](https://github.com/openeuropa/triple-store-dev/pull/83) ([imanoleguskiza](https://github.com/imanoleguskiza))
+
 ## [1.27.0](https://github.com/openeuropa/triple-store-dev/tree/1.27.0) (2023-03-29)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.26.0...1.27.0)
 
 **Merged pull requests:**
 
+- Prepare changelog for release 1.27.0. [\#82](https://github.com/openeuropa/triple-store-dev/pull/82) ([sergepavle](https://github.com/sergepavle))
 - EWPP-3188: Update triple store vocabularies. [\#80](https://github.com/openeuropa/triple-store-dev/pull/80) ([sergepavle](https://github.com/sergepavle))
 
 ## [1.26.0](https://github.com/openeuropa/triple-store-dev/tree/1.26.0) (2023-01-09)
