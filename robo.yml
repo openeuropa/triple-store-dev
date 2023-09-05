@@ -96,7 +96,7 @@ data:
 
   - name: "com-web-presence"
     graph: "http://publications.europa.eu/resource/dataset/com-web-presence"
-    url: "http://publications.europa.eu/resource/cellar/df0852e6-1040-11ee-b12e-01aa75ed71a1.0001.02/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/df0852e6-1040-11ee-b12e-01aa75ed71a1.0001.01/DOC_1"
     format: "rdf"
 
   - name: "political-leader"
