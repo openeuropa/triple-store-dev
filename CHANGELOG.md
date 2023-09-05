@@ -1,11 +1,20 @@
 # Changelog
 
+## [1.29.0](https://github.com/openeuropa/triple-store-dev/tree/1.29.0) (2023-09-05)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.28.0...1.29.0)
+
+**Merged pull requests:**
+
+- EWPP-3580: Fix URL for com-web-presence vocabulary. [\#86](https://github.com/openeuropa/triple-store-dev/pull/86) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.28.0](https://github.com/openeuropa/triple-store-dev/tree/1.28.0) (2023-08-08)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.27.0...1.28.0)
 
 **Merged pull requests:**
 
+- Prepare release 1.28.0. [\#85](https://github.com/openeuropa/triple-store-dev/pull/85) ([imanoleguskiza](https://github.com/imanoleguskiza))
 - DROPSEC-6425: change build method [\#84](https://github.com/openeuropa/triple-store-dev/pull/84) ([gervasek](https://github.com/gervasek))
 - EWPP-3465: Update vocabularies. [\#83](https://github.com/openeuropa/triple-store-dev/pull/83) ([imanoleguskiza](https://github.com/imanoleguskiza))
 
