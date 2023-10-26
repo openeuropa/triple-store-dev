@@ -19,7 +19,7 @@ data:
 
   - name: "country"
     graph: "http://publications.europa.eu/resource/authority/country"
-    url: "http://publications.europa.eu/resource/cellar/b38f3819-53ce-11ee-9220-01aa75ed71a1.0001.04/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/eae692cc-103e-11ee-b12e-01aa75ed71a1.0001.04/DOC_1"
     format: "rdf"
 
   - name: "digital-europa-thesaurus"
