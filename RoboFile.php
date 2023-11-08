@@ -103,7 +103,7 @@ class RoboFile extends \Robo\Tasks implements ConfigAwareInterface {
     $tasks = [];
     $tasks[] = $this->taskWriteToFile('query.sql')->append(TRUE)->lines($queries);
     $tasks[] = $this->taskExec("cat query.sql");
-    $tasks[] = $this->taskExec("isql-v -H {$host} -S {$port} -U {$username} -P {$password} < query.sql");
+    $tasks[] = $this->taskExec("isql -H {$host} -S {$port} -U {$username} -P {$password} < query.sql");
     $tasks[] = $this->taskFilesystemStack()->remove('query.sql');
 
     return $this->collectionBuilder()->addTaskList($tasks);
