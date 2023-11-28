@@ -1,11 +1,20 @@
 # Changelog
 
+## [1.32.0](https://github.com/openeuropa/triple-store-dev/tree/1.32.0) (2023-11-28)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.31.0...1.32.0)
+
+**Merged pull requests:**
+
+- EWPP-3798: Update DET vocabulary. [\#93](https://github.com/openeuropa/triple-store-dev/pull/93) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.31.0](https://github.com/openeuropa/triple-store-dev/tree/1.31.0) (2023-10-27)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.30.0...1.31.0)
 
 **Merged pull requests:**
 
+- Prepare release 1.31.0. [\#92](https://github.com/openeuropa/triple-store-dev/pull/92) ([sergepavle](https://github.com/sergepavle))
 - EWPP-3700: Revert update of Country vocabulary. [\#91](https://github.com/openeuropa/triple-store-dev/pull/91) ([sergepavle](https://github.com/sergepavle))
 
 ## [1.30.0](https://github.com/openeuropa/triple-store-dev/tree/1.30.0) (2023-10-23)
