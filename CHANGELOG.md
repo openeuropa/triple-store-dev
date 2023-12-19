@@ -1,11 +1,20 @@
 # Changelog
 
+## [1.33.0](https://github.com/openeuropa/triple-store-dev/tree/1.33.0) (2023-12-19)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.32.0...1.33.0)
+
+**Merged pull requests:**
+
+- EWPP-3691: Update vocabularies. [\#88](https://github.com/openeuropa/triple-store-dev/pull/88) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.32.0](https://github.com/openeuropa/triple-store-dev/tree/1.32.0) (2023-11-28)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.31.0...1.32.0)
 
 **Merged pull requests:**
 
+- Prepare release 1.32.0. [\#94](https://github.com/openeuropa/triple-store-dev/pull/94) ([sergepavle](https://github.com/sergepavle))
 - EWPP-3798: Update DET vocabulary. [\#93](https://github.com/openeuropa/triple-store-dev/pull/93) ([sergepavle](https://github.com/sergepavle))
 
 ## [1.31.0](https://github.com/openeuropa/triple-store-dev/tree/1.31.0) (2023-10-27)
