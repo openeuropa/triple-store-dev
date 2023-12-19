@@ -14,7 +14,7 @@ data:
 
   - name: "corporate-body"
     graph: "http://publications.europa.eu/resource/authority/corporate-body"
-    url: "http://publications.europa.eu/resource/cellar/985d3d28-9a5c-11ee-b164-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/8f89a562-5c6c-11ee-9220-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "country"
@@ -24,7 +24,7 @@ data:
 
   - name: "digital-europa-thesaurus"
     graph: "http://data.europa.eu/uxp"
-    url: "http://publications.europa.eu/resource/cellar/8028fdf8-8d0f-11ee-8aa6-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/fdeb7b20-5c6e-11ee-9220-01aa75ed71a1.0001.03/DOC_1"
     file: "DET-skos-core.rdf"
     format: "zip"
 
