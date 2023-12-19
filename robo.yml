@@ -14,7 +14,7 @@ data:
 
   - name: "corporate-body"
     graph: "http://publications.europa.eu/resource/authority/corporate-body"
-    url: "http://publications.europa.eu/resource/cellar/8f89a562-5c6c-11ee-9220-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/985d3d28-9a5c-11ee-b164-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "country"
@@ -36,12 +36,12 @@ data:
 
   - name: "eu-programme"
     graph: "http://publications.europa.eu/resource/authority/eu-programme"
-    url: "http://publications.europa.eu/resource/cellar/7d6ec9ed-5c6c-11ee-9220-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/743f7b08-9a5c-11ee-b164-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "language"
     graph: "http://publications.europa.eu/resource/authority/language"
-    url: "http://publications.europa.eu/resource/cellar/83cbd12f-5c6c-11ee-9220-01aa75ed71a1.0001.04/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/724b7336-9a5c-11ee-b164-01aa75ed71a1.0001.04/DOC_1"
     format: "rdf"
 
   - name: "organization-type"
@@ -61,12 +61,12 @@ data:
 
   - name: "resource-type"
     graph: "http://publications.europa.eu/resource/authority/resource-type"
-    url: "http://publications.europa.eu/resource/cellar/6a22c179-5c6c-11ee-9220-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/9815faf6-9a5c-11ee-b164-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "target-audience"
     graph: "http://publications.europa.eu/resource/authority/target-audience"
-    url: "http://publications.europa.eu/resource/cellar/44de2164-3e74-11ed-92ed-01aa75ed71a1.0001.02/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/95bbb745-9a5c-11ee-b164-01aa75ed71a1.0001.02/DOC_1"
     format: "rdf"
 
   - name: "SDG"
@@ -81,7 +81,7 @@ data:
 
   - name: "role"
     graph: "http://publications.europa.eu/resource/dataset/role"
-    url: "http://publications.europa.eu/resource/cellar/afc7cfd8-53ce-11ee-9220-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/46bca762-838d-11ee-99ba-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "role-qualifier"
@@ -101,7 +101,7 @@ data:
 
   - name: "political-leader"
     graph: "http://publications.europa.eu/resource/dataset/political-leader"
-    url: "http://publications.europa.eu/resource/cellar/eace76eb-103e-11ee-b12e-01aa75ed71a1.0001.01/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/7ddc1cea-9a5c-11ee-b164-01aa75ed71a1.0001.01/DOC_1"
     format: "rdf"
 
   - name: "position-grade"
