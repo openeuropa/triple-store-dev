@@ -1,11 +1,20 @@
 # Changelog
 
+## [1.33.1](https://github.com/openeuropa/triple-store-dev/tree/1.33.1) (2023-12-20)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.33.0...1.33.1)
+
+**Merged pull requests:**
+
+- EWPP-3691: Revert update for Corporate body vocabulary. [\#96](https://github.com/openeuropa/triple-store-dev/pull/96) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.33.0](https://github.com/openeuropa/triple-store-dev/tree/1.33.0) (2023-12-19)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.32.0...1.33.0)
 
 **Merged pull requests:**
 
+- Prepare release 1.33.0. [\#95](https://github.com/openeuropa/triple-store-dev/pull/95) ([sergepavle](https://github.com/sergepavle))
 - EWPP-3691: Update vocabularies. [\#88](https://github.com/openeuropa/triple-store-dev/pull/88) ([sergepavle](https://github.com/sergepavle))
 
 ## [1.32.0](https://github.com/openeuropa/triple-store-dev/tree/1.32.0) (2023-11-28)
