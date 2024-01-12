@@ -1,11 +1,20 @@
 # Changelog
 
+## [1.34.0](https://github.com/openeuropa/triple-store-dev/tree/1.34.0) (2024-01-12)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.33.2...1.34.0)
+
+**Merged pull requests:**
+
+- EWPP-3845: Update Political leader vocabulary. [\#100](https://github.com/openeuropa/triple-store-dev/pull/100) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.33.2](https://github.com/openeuropa/triple-store-dev/tree/1.33.2) (2024-01-10)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.33.1...1.33.2)
 
 **Merged pull requests:**
 
+- Prepare release 1.33.2. [\#99](https://github.com/openeuropa/triple-store-dev/pull/99) ([sergepavle](https://github.com/sergepavle))
 - EWPP-3845: Update corporate body vocabulary. [\#98](https://github.com/openeuropa/triple-store-dev/pull/98) ([imanoleguskiza](https://github.com/imanoleguskiza))
 
 ## [1.33.1](https://github.com/openeuropa/triple-store-dev/tree/1.33.1) (2023-12-20)
