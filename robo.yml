@@ -101,7 +101,7 @@ data:
 
   - name: "political-leader"
     graph: "http://publications.europa.eu/resource/dataset/political-leader"
-    url: "http://publications.europa.eu/resource/cellar/7ddc1cea-9a5c-11ee-b164-01aa75ed71a1.0001.01/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/48345647-af09-11ee-b164-01aa75ed71a1.0001.01/DOC_1"
     format: "rdf"
 
   - name: "position-grade"
