@@ -1,11 +1,20 @@
 # Changelog
 
+## [1.35.0](https://github.com/openeuropa/triple-store-dev/tree/1.35.0) (2024-02-12)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.34.0...1.35.0)
+
+**Merged pull requests:**
+
+- EWPP-3809: Upgrade DET vocabular version to 2.6.0. [\#103](https://github.com/openeuropa/triple-store-dev/pull/103) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.34.0](https://github.com/openeuropa/triple-store-dev/tree/1.34.0) (2024-01-12)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.33.2...1.34.0)
 
 **Merged pull requests:**
 
+- Prepare release 1.34.0. [\#101](https://github.com/openeuropa/triple-store-dev/pull/101) ([sergepavle](https://github.com/sergepavle))
 - EWPP-3845: Update Political leader vocabulary. [\#100](https://github.com/openeuropa/triple-store-dev/pull/100) ([sergepavle](https://github.com/sergepavle))
 
 ## [1.33.2](https://github.com/openeuropa/triple-store-dev/tree/1.33.2) (2024-01-10)
