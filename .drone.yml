@@ -14,7 +14,7 @@ pipeline:
 
   # Test image build.
   build:
-    image: registry.fpfis.eu/fpfis/docker:18-dind
+    image: git.fpfis.tech.ec.europa.eu/fpfis/dependency_proxy/containers/docker:18-dind
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     commands:
