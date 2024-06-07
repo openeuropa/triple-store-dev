@@ -1,4 +1,4 @@
-FROM composer:1.7 AS build
+FROM composer:2 AS build
 WORKDIR /app
 
 COPY composer.json composer.json
@@ -9,12 +9,12 @@ COPY run.sh run.sh
 
 RUN composer --no-interaction install
 
-FROM tenforce/virtuoso:1.3.1-virtuoso7.2.2
+FROM openlink/virtuoso-opensource-7:latest
 
 ENV IMPORT_DIR /tmp/import
 ENV DBA_PASSWORD dba
 
-RUN apt-get update && apt-get install -qq -y wget curl php7.0 php7.0-zip netcat
+RUN apt-get update && apt-get install -qq -y wget curl php7.4-cli php7.4-zip netcat
 
 COPY --from=build /app .
 
