@@ -1,11 +1,20 @@
 # Changelog
 
+## [1.37.0](https://github.com/openeuropa/triple-store-dev/tree/1.37.0) (2024-06-07)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.36.0...1.37.0)
+
+**Merged pull requests:**
+
+- Use virtuoso image directly to allow multi-arch builds. [\#102](https://github.com/openeuropa/triple-store-dev/pull/102) ([brummbar](https://github.com/brummbar))
+
 ## [1.36.0](https://github.com/openeuropa/triple-store-dev/tree/1.36.0) (2024-04-12)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.35.0...1.36.0)
 
 **Merged pull requests:**
 
+- Prepare release 1.36.0. [\#106](https://github.com/openeuropa/triple-store-dev/pull/106) ([sergepavle](https://github.com/sergepavle))
 - EWPP-4186: Update vocabularies. [\#105](https://github.com/openeuropa/triple-store-dev/pull/105) ([sergepavle](https://github.com/sergepavle))
 
 ## [1.35.0](https://github.com/openeuropa/triple-store-dev/tree/1.35.0) (2024-02-12)
