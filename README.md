@@ -120,8 +120,6 @@ Default values set via environment variables will override values set in `robo.y
 In Docker Compose declare service as follow:
 
 ```
-version: '2'
-
 services:
   triple-store:
     image: openeuropa/triple-store-dev
@@ -130,7 +128,18 @@ services:
 ```
 
 For more information about Docker Compose configuration check the parent Docker image
-[Tenforce Virtuoso](https://hub.docker.com/r/tenforce/virtuoso/).
+[OpenLink Virtuoso Open Source Edition](https://hub.docker.com/r/openlink/virtuoso-opensource-7).
+
+Additionally, the environment variable `SPARQL_UPDATE=true` can be defined to allow writing to the triple store.
+Please note that only `true` as value is supported. Any other value will be the same as ommitting the variable.
+
+```
+services:
+  triple-store:
+    image: openeuropa/triple-store-dev
+  environment:
+    - SPARQL_UPDATE=true
+```
 
 In order to test a specific branch of the `triple-store-dev` image follow the steps below:
 
