@@ -27,7 +27,9 @@ if [ ! -f "$FLAG_FILE" ]; then
 
   if [ "$SPARQL_UPDATE" = "true" ]; then
     print_info "Granting update permission..."
-    /virtuoso-entrypoint.sh isql < /queries/grant_update.sql
+    # The "isql" command of virtuoso-entrypoint.sh has an hardcoded value for the password,
+    # and it won't work if the password is changed via env variables.
+    "$VIRTUOSO_HOME/bin/isql" localhost:1111 dba $DBA_PASSWORD < /queries/grant_update.sql
     # Ensure a new line from previous ISQL execution.
     echo
     print_info "Update permission granted."
