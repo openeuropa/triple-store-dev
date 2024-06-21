@@ -10,8 +10,8 @@ RUN composer --no-interaction install
 
 FROM openlink/virtuoso-opensource-7:latest
 
-ENV IMPORT_DIR /tmp/import
-ENV DBA_PASSWORD dba
+ENV IMPORT_DIR=/tmp/import
+ENV DBA_PASSWORD=dba
 
 RUN apt-get update && apt-get install -qq -y wget curl php7.4-cli php7.4-zip netcat
 
