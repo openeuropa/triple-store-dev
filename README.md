@@ -137,8 +137,8 @@ Please note that only `true` as value is supported. Any other value will be the 
 services:
   triple-store:
     image: openeuropa/triple-store-dev
-  environment:
-    - SPARQL_UPDATE=true
+    environment:
+      - SPARQL_UPDATE=true
 ```
 
 In order to test a specific branch of the `triple-store-dev` image follow the steps below:
