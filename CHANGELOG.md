@@ -1,15 +1,21 @@
-# Changelog
+# Change Log
+
+## [1.37.1](https://github.com/openeuropa/triple-store-dev/tree/1.37.1) (2024-06-24)
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.37.0...1.37.1)
+
+**Merged pull requests:**
+
+- OEL-3065: Reintroduce SPARQL\_UPDATE variable to allow writing operations [\#109](https://github.com/openeuropa/triple-store-dev/pull/109) ([brummbar](https://github.com/brummbar))
 
 ## [1.37.0](https://github.com/openeuropa/triple-store-dev/tree/1.37.0) (2024-06-07)
-
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.36.0...1.37.0)
 
 **Merged pull requests:**
 
+- Release-1.37.0: Update changelog. [\#107](https://github.com/openeuropa/triple-store-dev/pull/107) ([nagyad](https://github.com/nagyad))
 - Use virtuoso image directly to allow multi-arch builds. [\#102](https://github.com/openeuropa/triple-store-dev/pull/102) ([brummbar](https://github.com/brummbar))
 
 ## [1.36.0](https://github.com/openeuropa/triple-store-dev/tree/1.36.0) (2024-04-12)
-
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.35.0...1.36.0)
 
 **Merged pull requests:**
