@@ -14,7 +14,7 @@ data:
 
   - name: "corporate-body"
     graph: "http://publications.europa.eu/resource/authority/corporate-body"
-    url: "http://publications.europa.eu/resource/cellar/2e00170f-e77d-11ee-9ea8-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/6a22b14d-28d8-11ef-9290-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "country"
@@ -24,7 +24,7 @@ data:
 
   - name: "digital-europa-thesaurus"
     graph: "http://data.europa.eu/uxp"
-    url: "http://publications.europa.eu/resource/cellar/4fa76412-e0fa-11ee-8b2b-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/6a72286e-2955-11ef-9290-01aa75ed71a1.0001.03/DOC_1"
     file: "DET-skos-core.rdf"
     format: "zip"
 
@@ -36,22 +36,22 @@ data:
 
   - name: "eu-programme"
     graph: "http://publications.europa.eu/resource/authority/eu-programme"
-    url: "http://publications.europa.eu/resource/cellar/27ee79cc-e0fa-11ee-8b2b-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/1c24911d-28d8-11ef-9290-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "language"
     graph: "http://publications.europa.eu/resource/authority/language"
-    url: "http://publications.europa.eu/resource/cellar/381c0438-e0fa-11ee-8b2b-01aa75ed71a1.0001.04/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/3f407e57-28d9-11ef-9290-01aa75ed71a1.0001.04/DOC_1"
     format: "rdf"
 
   - name: "organization-type"
     graph: "http://publications.europa.eu/resource/authority/organization-type"
-    url: "http://publications.europa.eu/resource/cellar/0b551b18-7afb-11ed-9887-01aa75ed71a1.0001.01/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/08aa4cb9-28d8-11ef-9290-01aa75ed71a1.0001.01/DOC_1"
     format: "rdf"
 
   - name: "place"
     graph: "http://publications.europa.eu/resource/dataset/place"
-    url: "http://publications.europa.eu/resource/cellar/41262a21-e0fa-11ee-8b2b-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/3b3599b2-28d8-11ef-9290-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "public-event-type"
@@ -61,7 +61,7 @@ data:
 
   - name: "resource-type"
     graph: "http://publications.europa.eu/resource/authority/resource-type"
-    url: "http://publications.europa.eu/resource/cellar/2d05153e-e77d-11ee-9ea8-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/0d9b72ae-28d9-11ef-9290-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "target-audience"
@@ -116,5 +116,5 @@ data:
 
   - name: "procurement-procedure-type"
     graph: "http://publications.europa.eu/resource/dataset/procurement-procedure-type"
-    url: "http://publications.europa.eu/resource/cellar/2b7b4a0d-e0fa-11ee-8b2b-01aa75ed71a1.0001.02/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/403d4a23-28d8-11ef-9290-01aa75ed71a1.0001.02/DOC_1"
     format: "rdf"
