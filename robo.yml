@@ -101,8 +101,9 @@ data:
 
   - name: "political-leader"
     graph: "http://publications.europa.eu/resource/dataset/political-leader"
-    url: "http://publications.europa.eu/resource/cellar/0cf5b20b-28d8-11ef-9290-01aa75ed71a1.0001.01/DOC_1"
-    format: "rdf"
+    url: "http://files.fpfis.tech.ec.europa.eu/index.php/s/AP7p6fPSs5Dk8Hs/download/political-leader-skos-ap-eu.zip"
+    file: "political-leader-skos-ap-eu.rdf"
+    format: "zip"
 
   - name: "position-grade"
     graph: "http://publications.europa.eu/resource/dataset/position-grade"

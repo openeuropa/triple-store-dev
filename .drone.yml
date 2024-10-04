@@ -19,27 +19,13 @@ pipeline:
       - /var/run/docker.sock:/var/run/docker.sock
     commands:
       - docker ps
-      - docker build -t openeuropa/triple-store-dev .
-
-  # Deploy image to Docker Hub.
-  publish-docker-image-tag:
-    image: registry.fpfis.eu/drone-plugins/docker
-    privileged: true
-    repo: openeuropa/triple-store-dev
-    dockerfile: Dockerfile
-    tags:
-      - latest
-      - ${DRONE_TAG}
-    secrets: [ DOCKER_USERNAME, DOCKER_PASSWORD ]
-    when:
-      event: [ tag ]
-      branch: master
+      - docker build -t sergepavle/triple-store-dev .
 
   # Deploy image to Gitlab.
   publish-docker-image-tag-gitlab:
     image: registry.fpfis.eu/drone-plugins/docker
     privileged: true
-    repo: registry.fpfis.eu/openeuropa/triple-store-dev
+    repo: registry.fpfis.eu/sergepavle/triple-store-dev
     dockerfile: Dockerfile
     tags:
       - latest
@@ -51,5 +37,5 @@ pipeline:
       - source: GITLAB_PASSWORD
         target: DOCKER_PASSWORD
     when:
-      event: [ tag ]
-      branch: master
+      event: [ push, tag ]
+      branch: EWPP-4818
