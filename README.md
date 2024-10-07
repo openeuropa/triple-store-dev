@@ -11,7 +11,7 @@ based on [OpenLink Virtuoso](https://virtuoso.openlinksw.com).
 The following RDF triples will be imported once the service starts:
 
 - [Corporate body classification](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/corporate-body-classification&version=20240925-0)
-- [Corporate body](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/corporate-body&version=20240612-0)
+- [Corporate body](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/corporate-body&version=20240925-0)
 - [Country](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country&version=20230614-0)
 - [Digital Europa Thesaurus](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/det&version=2.9.0)
 - [EuroVoc Thesaurus](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc&version=20240711-0)
@@ -28,7 +28,7 @@ The following RDF triples will be imported once the service starts:
 - [Role qualifier](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/role-qualifier&version=20230927-0)
 - [Strategic priority](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/strategic-priority&version=20221214-0)
 - [European Commission web presence classes](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/com-web-presence&version=4.0)
-- [EU political leader name](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/political-leader&version=20240612-0)
+- [EU political leader name](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/political-leader&version=20241002-0)
 - [Position grade](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/position-grade&version=20210929-0)
 - [Position type](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/position-type&version=20210929-0)
 - [Procurement procedure type](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/procurement-procedure-type&version=20240925-0)

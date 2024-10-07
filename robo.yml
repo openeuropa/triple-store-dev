@@ -14,7 +14,7 @@ data:
 
   - name: "corporate-body"
     graph: "http://publications.europa.eu/resource/authority/corporate-body"
-    url: "http://publications.europa.eu/resource/cellar/6a22b14d-28d8-11ef-9290-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/89ff972e-7b25-11ef-bbbe-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "country"
@@ -101,7 +101,7 @@ data:
 
   - name: "political-leader"
     graph: "http://publications.europa.eu/resource/dataset/political-leader"
-    url: "http://publications.europa.eu/resource/cellar/0cf5b20b-28d8-11ef-9290-01aa75ed71a1.0001.01/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/74efb5d4-808f-11ef-a67d-01aa75ed71a1.0001.01/DOC_1"
     format: "rdf"
 
   - name: "position-grade"
