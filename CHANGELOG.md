@@ -1,11 +1,20 @@
 # Changelog
 
+## [1.41.0](https://github.com/openeuropa/triple-store-dev/tree/1.41.0) (2024-10-11)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.40.0...1.41.0)
+
+**Merged pull requests:**
+
+- EWPP-4789: Update corporate body vocabulary and political leader. [\#118](https://github.com/openeuropa/triple-store-dev/pull/118) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.40.0](https://github.com/openeuropa/triple-store-dev/tree/1.40.0) (2024-10-03)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.39.0...1.40.0)
 
 **Merged pull requests:**
 
+- Prepare release 1.40.0. [\#116](https://github.com/openeuropa/triple-store-dev/pull/116) ([sergepavle](https://github.com/sergepavle))
 - EWPP-4789: Update vocabularies. [\#115](https://github.com/openeuropa/triple-store-dev/pull/115) ([sergepavle](https://github.com/sergepavle))
 
 ## [1.39.0](https://github.com/openeuropa/triple-store-dev/tree/1.39.0) (2024-08-19)
