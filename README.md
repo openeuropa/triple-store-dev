@@ -28,7 +28,7 @@ The following RDF triples will be imported once the service starts:
 - [Role qualifier](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/role-qualifier&version=20230927-0)
 - [Strategic priority](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/strategic-priority&version=20221214-0)
 - [European Commission web presence classes](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/com-web-presence&version=4.0)
-- [EU political leader name](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/political-leader&version=20241002-0)
+- [EU political leader name](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/political-leader&version=20241201-0)
 - [Position grade](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/position-grade&version=20210929-0)
 - [Position type](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/position-type&version=20210929-0)
 - [Procurement procedure type](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/procurement-procedure-type&version=20240925-0)
