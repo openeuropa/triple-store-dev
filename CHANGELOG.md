@@ -1,11 +1,20 @@
 # Changelog
 
+## [1.43.0](https://github.com/openeuropa/triple-store-dev/tree/1.43.0) (2024-12-03)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.42.0...1.43.0)
+
+**Merged pull requests:**
+
+- EWPP-5001: Apply update for political leader vocabulary from OP. [\#122](https://github.com/openeuropa/triple-store-dev/pull/122) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.42.0](https://github.com/openeuropa/triple-store-dev/tree/1.42.0) (2024-11-25)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.41.0...1.42.0)
 
 **Merged pull requests:**
 
+- Prepare release 1.42.0. [\#121](https://github.com/openeuropa/triple-store-dev/pull/121) ([sergepavle](https://github.com/sergepavle))
 - EWPP-4965: Update political leader vocabulary with custom location. [\#120](https://github.com/openeuropa/triple-store-dev/pull/120) ([sergepavle](https://github.com/sergepavle))
 
 ## [1.41.0](https://github.com/openeuropa/triple-store-dev/tree/1.41.0) (2024-10-11)
