@@ -1,11 +1,24 @@
 # Changelog
 
+## [1.44.0](https://github.com/openeuropa/triple-store-dev/tree/1.44.0) (2024-12-16)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.43.0...1.44.0)
+
+**Merged pull requests:**
+
+- EWPP-5051: Update vocabularies. [\#124](https://github.com/openeuropa/triple-store-dev/pull/124) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.43.0](https://github.com/openeuropa/triple-store-dev/tree/1.43.0) (2024-12-03)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.42.0...1.43.0)
 
+**Closed issues:**
+
+- How to attach an old container volume to a new container of this Dockerfile? [\#114](https://github.com/openeuropa/triple-store-dev/issues/114)
+
 **Merged pull requests:**
 
+- Prepare release 1.43.0 [\#123](https://github.com/openeuropa/triple-store-dev/pull/123) ([sergepavle](https://github.com/sergepavle))
 - EWPP-5001: Apply update for political leader vocabulary from OP. [\#122](https://github.com/openeuropa/triple-store-dev/pull/122) ([sergepavle](https://github.com/sergepavle))
 
 ## [1.42.0](https://github.com/openeuropa/triple-store-dev/tree/1.42.0) (2024-11-25)
