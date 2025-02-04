@@ -14,7 +14,7 @@ data:
 
   - name: "corporate-body"
     graph: "http://publications.europa.eu/resource/authority/corporate-body"
-    url: "http://publications.europa.eu/resource/cellar/c65b511f-b798-11ef-91ed-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/e5d43703-dfa6-11ef-be2a-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "country"
