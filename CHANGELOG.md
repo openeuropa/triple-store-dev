@@ -1,11 +1,20 @@
 # Changelog
 
+## [1.45.0](https://github.com/openeuropa/triple-store-dev/tree/1.45.0) (2025-02-06)
+
+[Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.44.0...1.45.0)
+
+**Merged pull requests:**
+
+- EWPP-5210: Update vocabulary. [\#126](https://github.com/openeuropa/triple-store-dev/pull/126) ([sergepavle](https://github.com/sergepavle))
+
 ## [1.44.0](https://github.com/openeuropa/triple-store-dev/tree/1.44.0) (2024-12-16)
 
 [Full Changelog](https://github.com/openeuropa/triple-store-dev/compare/1.43.0...1.44.0)
 
 **Merged pull requests:**
 
+- Prepeare release 1.44.0. [\#125](https://github.com/openeuropa/triple-store-dev/pull/125) ([sergepavle](https://github.com/sergepavle))
 - EWPP-5051: Update vocabularies. [\#124](https://github.com/openeuropa/triple-store-dev/pull/124) ([sergepavle](https://github.com/sergepavle))
 
 ## [1.43.0](https://github.com/openeuropa/triple-store-dev/tree/1.43.0) (2024-12-03)
