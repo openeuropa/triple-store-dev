@@ -14,7 +14,7 @@ data:
 
   - name: "corporate-body"
     graph: "http://publications.europa.eu/resource/authority/corporate-body"
-    url: "http://publications.europa.eu/resource/cellar/e5d43703-dfa6-11ef-be2a-01aa75ed71a1.0001.03/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/66a8564e-e85f-11ef-b5e9-01aa75ed71a1.0001.03/DOC_1"
     format: "rdf"
 
   - name: "country"
@@ -30,7 +30,7 @@ data:
 
   - name: "eurovoc-thesaurus"
     graph: "http://publications.europa.eu/resource/dataset/eurovoc"
-    url: "http://publications.europa.eu/resource/cellar/549b83d6-3f56-11ef-865a-01aa75ed71a1.0001.04/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/af9b986e-e532-11ef-b5e9-01aa75ed71a1.0001.04/DOC_1"
     file: "eurovoc_in_skos_core_concepts.rdf"
     format: "zip"
 
