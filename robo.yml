@@ -41,7 +41,7 @@ data:
 
   - name: "language"
     graph: "http://publications.europa.eu/resource/authority/language"
-    url: "http://publications.europa.eu/resource/cellar/78277b8c-04cf-11f0-9503-01aa75ed71a1.0001.04/DOC_1"
+    url: "http://publications.europa.eu/resource/cellar/92dfedef-7b25-11ef-bbbe-01aa75ed71a1.0001.04/DOC_1"
     format: "rdf"
 
   - name: "organization-type"
