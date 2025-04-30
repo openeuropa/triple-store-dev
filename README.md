@@ -1,3 +1,7 @@
+# :warning: This repository is archived
+
+Development has moved to new [triple store repository](https://git.fpfis.tech.ec.europa.eu/fpfis/triple-store).
+
 # Content layer development triple store
 
 Triple storage containing default data to kick-start content layer local development
