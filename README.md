@@ -1,6 +1,6 @@
 # :warning: This repository is archived
 
-Development has moved to new [triple store repository](https://git.fpfis.tech.ec.europa.eu/fpfis/triple-store).
+Development has moved to new [triple store repository](https://git.fpfis.tech.ec.europa.eu/digit/devsecops/triplestore).
 
 # Content layer development triple store
 
